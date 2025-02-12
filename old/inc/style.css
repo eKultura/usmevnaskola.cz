@@ -1,0 +1,258 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    background-color: #f5f5f5;
+    color: #333;
+}
+
+h1, h2, h3, h4 {
+    font-family: 'Fredoka', sans-serif;
+    color: #1e90ff; /* Modrá pro nadpisy */
+}
+
+.logo {
+    text-decoration: none;
+    color: #1e90ff;
+}
+
+    .smile-icon {
+        font-size: 2em; /* Základní zvìtšení pøes font-size */
+        width: 1em; /* Explicitní šíøka */
+        height: 1em; /* Explicitní výška */
+        display: inline-block; /* Umožní kontrolu velikosti */
+        vertical-align: middle; /* Zarovnání s textem */
+        color: #FFD700; /* Výchozí žlutá barva */
+        transition: color 0.3s ease, transform 0.3s ease; /* Pøidání efektu pøechodu */
+    }
+
+    .smile-icon:hover {
+        color: #FF6347; /* Èervenooranžová pøi hoveru */
+        transform: scale(1.2); /* Zvìtšení pøi hoveru */
+    }
+
+    h3 .smile-icon {
+        font-size: 1.5em; /* Zvýšení velikosti pøímo v kontextu nadpisu */
+    }
+
+#povesti {
+     text-align:left;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.obsah {
+    padding:20px;
+    margin:20px; 
+    text-align: center; 
+    max-width: 800px; 
+    margin: 20px auto;
+    font-size:120%;
+}
+
+.header {
+    background-color: #b0e0e6; /* Svìtle modrá pro záhlaví */
+    padding: 20px 0;
+    text-align: center;
+}
+
+.header h3 {
+    font-size: 36px;
+    color: #1e90ff; /* Modrá pro hlavní nadpis */
+}
+
+.nav a {
+    font-size: 18px;
+    color: #333;
+    margin: 0 15px;
+    text-decoration: none;
+}
+
+.hero {
+    background-color: #87ceeb; 
+    padding: 80px 0;
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.section {
+    text-align: center;
+}
+
+.hero h1 {
+    font-size: 42px;
+    color: #00008b;
+}
+
+.hero p {
+    font-size: 20px;
+    color: #000128;
+    margin-top: 20px;
+}
+
+p {
+    font-size: 110%;
+    margin: 20px;
+}
+
+.hero .btn {
+    display: inline-block;
+    background-color: #1e90ff; 
+    color: #fff;
+    padding: 10px 25px;
+    border-radius: 50px;
+    font-size: 20px;
+    margin-top: 30px;
+    text-decoration: none;
+}
+
+.features {
+    background-color: #fff;
+    padding: 60px 0;
+    text-align: center;
+}
+
+.features h3 {
+    font-size: 32px;
+    color: #1e90ff; 
+    margin-bottom: 40px;
+}
+
+.feature-grid {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding-bottom: 30px;
+}
+
+.feature-item {
+    width: 30%; 
+    background-color: #b0e0e6;
+    padding: 20px;
+    margin: 10px;
+    border-radius: 15px;
+}
+
+
+@media (max-width: 768px) {
+    .feature-item {
+        width: 100%; 
+        margin: 10px 0; 
+    }
+}
+
+
+.feature-item h4 {
+    font-size: 24px;
+    color: #333;
+    margin-top: 20px;
+}
+
+.feature-item p {
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+.feature-item img {
+    width: 80px;
+}
+
+.footer {
+    background-color: #f1f1f1; 
+    padding: 20px;
+    text-align: center;
+    color: #666;
+}
+
+.footer p {
+    font-size: 14px;
+}
+
+
+.footer {
+    background-color: #f9f9f9;
+    padding: 20px 20px;
+    color: #333;
+    text-align: center;
+}
+
+.footer .container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    text-align: left;
+}
+
+.footer-column h4 {
+    font-size: 1rem;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.footer-column ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-column ul li {
+    margin-bottom: 8px;
+}
+
+.footer-column ul li a {
+    text-decoration: none;
+    color: #666;
+}
+
+.footer-column ul li a:hover {
+    text-decoration: underline;
+    color: #00008b;
+}
+
+
+.social-icons {
+    display: flex; /* Flexbox pro zarovnání ikon */
+    justify-content: center; /* Zarovná ikony na støed */
+    gap: 15px; /* Mezera mezi ikonami */
+    margin-top: 20px; /* Horní a dolní odsazení */
+}
+
+.social-icons a {
+    color: #666; /* Jemná barva ikon */
+    font-size: 24px; /* Velikost ikon */
+    text-decoration: none; /* Bez podtržení */
+    transition: color 0.3s ease; /* Plynulá zmìna barvy pøi najetí */
+}
+
+.social-icons a:hover {
+    color: #1e90ff; /* Zvýraznìní barvy pøi najetí myší */
+}
+
+
+
+.footer-bottom {
+    margin-top: 5px;
+    font-size: 0.8rem;
+    color: #999;
+}
+
+.footer-bottom a {
+    color: #333;
+    text-decoration: none;
+}
+
+.footer-bottom a:hover {
+    text-decoration: underline;
+}
