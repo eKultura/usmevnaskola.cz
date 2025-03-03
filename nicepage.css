@@ -15337,6 +15337,7 @@ section.u-image:not(.u-hover-box),
   display: block;
   line-height: 0;
   border-width: 0px;
+  margin: 10px;
 }
 .u-svg-link {
   width: 100%;
@@ -39894,7 +39895,7 @@ li.active > a.u-button-style.u-text-palette-1-base,
 li.active > a.u-button-style.u-text-palette-1-base[class*="u-border-"],
 a.u-button-style.u-text-palette-1-base,
 a.u-button-style.u-text-palette-1-base[class*="u-border-"] {
-  color: #fb255a !important;
+  color: #feca02 !important;
   
   
   
@@ -44059,8 +44060,7 @@ a.u-link.u-text-hover-grey-90:hover {
         font-weight: 400;
         line-height: 1.7;
         font-size: 1.125rem;
-        margin-top: 20px;
-        margin-bottom: 20px;
+        margin: 20px;
         }
         p.u-small-text
         {

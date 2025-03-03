@@ -148,7 +148,7 @@
 }
 
 .u-section-2 .u-sheet-1 {
-  min-height: 449px;
+  min-height: fit-content;
 }
 
 .u-section-2 .u-text-1 {
@@ -175,7 +175,8 @@
     font-size: 1rem;
   }
 }.u-section-3 .u-sheet-1 {
-  min-height: 449px;
+  min-height: fit-content;
+  padding: 2rem;
 }
 
 .u-section-3 .u-text-1 {
@@ -184,7 +185,7 @@
   --animation-custom_in-opacity: 0;
   --animation-custom_in-rotate: 0deg;
   --animation-custom_in-scale: 0.3;
-  margin: 60px auto 0;
+  margin: 30px auto 0;
 }
 
 .u-section-3 .u-text-2 {
@@ -194,7 +195,7 @@
   --animation-custom_in-opacity: 0;
   --animation-custom_in-rotate: 0deg;
   --animation-custom_in-scale: 0.3;
-  margin: 40px 0 0;
+  margin: 20px 0;
 }
 
 .u-section-3 .u-btn-1 {
@@ -267,7 +268,7 @@
   --animation-custom_in-rotate: 0deg;
   --animation-custom_in-scale: 0.3;
   width: 210px;
-  background-image: url("images/happy-man-with-long-thick-ginger-beard-has-friendly-smile_273609-16616.jpg");
+  background-image: url("https://ekultura.eu/img/nas-tym/kristina.png");
   background-position: 50% 50%;
   margin: 0 auto;
 }
@@ -291,15 +292,15 @@
 }
 
 .u-section-4 .u-icon-1 {
-  height: 100%;
+  /* height: 100%; */
 }
 
 .u-section-4 .u-icon-2 {
-  height: 100%;
+  /* height: 100%; */
 }
 
 .u-section-4 .u-icon-3 {
-  height: 100%;
+  /* height: 100%; */
 }
 
 .u-section-4 .u-list-item-2 {
