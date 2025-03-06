@@ -9,7 +9,7 @@ Experience, ​Solution In Easy Steps Successful life, ​The core of my work, H
     <link rel="stylesheet" href="nicepage.css" media="screen">
     <link rel="icon" type="image/x-icon" href="./images/usmvn-kola-high-resolution-logo.jpeg">
 
-<link rel="stylesheet" href="baje-a-povesti.css" media="screen">
+<link rel="stylesheet" href="/css/baje-a-povesti.css" media="screen">
     <script class="u-script" type="text/javascript" src="jquery.js" defer=""></script>
     <script class="u-script" type="text/javascript" src="nicepage.js" defer=""></script>
     <meta name="generator" content="Nicepage 7.2.3, nicepage.com">
