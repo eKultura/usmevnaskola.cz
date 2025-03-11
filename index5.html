@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Úsměvná Škola</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: #ffeb3b;
+            font-family: 'Comic Sans MS', cursive, sans-serif;
+        }
+        .custom-header {
+            background: #ffffff;
+            color: #ff5722;
+            padding: 40px;
+            text-align: center;
+            font-size: 32px;
+            font-weight: bold;
+            border-radius: 0 0 25px 25px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+        }
+        .tile {
+            background: white;
+            border-radius: 20px;
+            box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.2);
+            padding: 30px;
+            text-align: center;
+            transition: transform 0.3s ease-in-out;
+            margin: 20px 0;
+        }
+        .tile:hover {
+            transform: translateY(-5px);
+        }
+        .btn-custom {
+            background: #ff5722;
+            color: white;
+            padding: 15px 25px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-size: 20px;
+        }
+        .btn-custom:hover {
+            background: #e64a19;
+        }
+        footer {
+            background: #ff5722;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin-top: 40px;
+            border-radius: 20px 20px 0 0;
+        }
+    </style>
+</head>
+<body>
+    <header class="custom-header">
+        &#128218; <strong>Úsměvná Škola</strong> - Učení hrou!
+    </header>
+    
+    <main class="container py-5">
+        <div class="row">
+            <div class="col-md-6">
+                <div class="tile">
+                    <h3>&#128640; Dobrodružství poznání</h3>
+                    <p>Každý den je nová příležitost se něco naučit!</p>
+                    <a href="#" class="btn-custom">Pojďme se učit!</a>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="tile">
+                    <h3>&#128187; Interaktivní kurzy</h3>
+                    <p>Objevte svět matematiky, přírody a kreativity!</p>
+                </div>
+            </div>
+        </div>
+    </main>
+    
+    <footer>
+        &copy; 2025 Úsměvná Škola | Všechna práva vyhrazena
+    </footer>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
