@@ -18,7 +18,26 @@ Experience, ​Solution In Easy Steps Successful life, ​The core of my work, H
     
     
     
-    
+    <style>
+.btn {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 5px 15px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+}
+.btn:hover {
+    background-color: #0056b3;
+}
+
+.hidden {
+    display: none;
+}
+    </style>
     
     
     
@@ -84,23 +103,35 @@ Experience, ​Solution In Easy Steps Successful life, ​The core of my work, H
                   <div class="u-align-left u-container-align-left u-container-style u-layout-cell u-left-cell u-size-20 u-layout-cell-1">
                     <div class="u-container-layout u-valign-top u-container-layout-1">
                       <h3 class="u-text u-text-default u-text-3"> Má hlavu, ale nemá oči, má nohy, ale nemůže chodit.</h3>
-                      <p class="u-text u-text-4"> Nápověda: Má ji každý člověk.<br>
-                        <br>Řešení: Postel<br>
+                      <p class="u-text u-text-4">
+            <button class="btn" onclick="toggleElement('hint-1')">Zobrazit nápovědu</button>
+            <p id="hint-1" class="hidden">Nápověda: Má ji každý člověk.</p>
+            <button class="btn" onclick="toggleElement('solution-1')">Zobrazit řešení</button>
+            <p id="solution-1" class="hidden">Řešení: Postel</p>
                       </p>
+
                     </div>
                   </div>
                   <div class="u-align-left u-container-align-left u-container-style u-layout-cell u-left-cell u-size-20 u-layout-cell-2">
                     <div class="u-container-layout u-valign-top u-container-layout-2">
-                      <h3 class="u-text u-text-default u-text-5"> Co má zuby, ale nekouše?</h3>
-                      <p class="u-text u-text-6"> Nápověda: Používáme to každý den.<br>
-                        <br>Řešení: Hřeben<br>
+                      <h3 class="u-text u-text-default u-text-5"> Běží to, ale nemá nohy, plyne to, ale není voda</h3>
+                      <p class="u-text u-text-6">
+            <button class="btn" onclick="toggleElement('hint-2')">Zobrazit nápovědu</button>
+            <p id="hint-2" class="hidden">Nápověda: Nachází se to na hodinách.</p>
+            <button class="btn" onclick="toggleElement('solution-2')">Zobrazit řešení</button>
+            <p id="solution-2" class="hidden">Řešení: Čas</p>
                       </p>
                     </div>
                   </div>
                   <div class="u-align-left u-container-align-left u-container-style u-layout-cell u-left-cell u-size-20 u-layout-cell-3">
                     <div class="u-container-layout u-valign-top u-container-layout-3">
-                      <h3 class="u-text u-text-default u-text-7">Sample Headline</h3>
-                      <p class="u-text u-text-8">Sample text. Click to select the text box. Click again or double click to start editing the text.</p>
+                      <h3 class="u-text u-text-default u-text-7">Co má zuby, ale nekouše?</h3>
+                      <p class="u-text u-text-8">
+            <button class="btn" onclick="toggleElement('hint-3')">Zobrazit nápovědu</button>
+            <p id="hint-3" class="hidden">Nápověda: Používáme to každý den.</p>
+            <button class="btn" onclick="toggleElement('solution-3')">Zobrazit řešení</button>
+            <p id="solution-3" class="hidden">Řešení: Hřeben</p>
+                      </p>
                     </div>
                   </div>
                 </div>
@@ -117,21 +148,114 @@ Experience, ​Solution In Easy Steps Successful life, ​The core of my work, H
                   <div class="u-align-left u-container-align-left u-container-style u-layout-cell u-right-cell u-size-20 u-layout-cell-5">
                     <div class="u-container-layout u-valign-top u-container-layout-5">
                       <h3 class="u-text u-text-default u-text-9"> Běží to, ale nemá nohy, plyne to, ale není voda</h3>
-                      <p class="u-text u-text-10"> Nápověda: Nachází se to na hodinách.<br>
-                        <br>Řešení: Čas<br>
+                      <p class="u-text u-text-10">
+
+            <button class="btn" onclick="toggleElement('hint-4')">Zobrazit nápovědu</button>
+            <p id="hint-4" class="hidden"> Nachází se to na hodinách.</p>
+            <button class="btn" onclick="toggleElement('solution-4')">Zobrazit řešení</button>
+            <p id="solution-4" class="hidden">Řešení: Čas</p>
+            
+
                       </p>
                     </div>
                   </div>
                   <div class="u-align-left u-container-align-left u-container-style u-layout-cell u-right-cell u-size-20 u-layout-cell-6">
                     <div class="u-container-layout u-valign-top u-container-layout-6">
-                      <h3 class="u-text u-text-default u-text-11">Sample Headline</h3>
-                      <p class="u-text u-text-12">Sample text. Click to select the text box. Click again or double click to start editing the text.</p>
+                      <h3 class="u-text u-text-default u-text-11">Mám zuby, ale nejím. Najdeš mě v koupelně.</h3>
+                      <p class="u-text u-text-12">
+
+            <button class="btn" onclick="toggleElement('hint-5')">Zobrazit nápovědu</button>
+            <p id="hint-5" class="hidden">Nápověda: Používáš mě každý den k úpravě vlasů.</p>
+            <button class="btn" onclick="toggleElement('solution-5')">Zobrazit řešení</button>
+            <p id="solution-5" class="hidden">Řešení: Hřeben</p>
+            
+
+                      </p>
                     </div>
                   </div>
                   <div class="u-align-left u-container-align-left u-container-style u-layout-cell u-right-cell u-size-20 u-layout-cell-7">
                     <div class="u-container-layout u-valign-top u-container-layout-7">
-                      <h3 class="u-text u-text-default u-text-13">Sample Headline</h3>
-                      <p class="u-text u-text-14">Sample text. Click to select the text box. Click again or double click to start editing the text.</p>
+                      <h3 class="u-text u-text-default u-text-13">Padám z nebe a pokrývám zemi, když je zima, všichni se těší.</h3>
+                      <p class="u-text u-text-14">
+                      
+
+            <button class="btn" onclick="toggleElement('hint-6')">Zobrazit nápovědu</button>
+            <p id="hint-6" class="hidden">Nápověda: Bílá přikrývka, kterou vidíš, když venku padá.</p>
+            <button class="btn" onclick="toggleElement('solution-6')">Zobrazit řešení</button>
+            <p id="solution-6" class="hidden">Řešení: Sníh</p>
+            
+
+
+<!-- DALSÍ HADANKY
+
+TIna 
+https://docs.google.com/document/d/1go26icBYjD6do1rGrqngsykqP1myJ9ndsRMPgc-ROzk/edit?usp=sharing
+
+
+
+
+3. Hadanka:
+Běžím, ale nemám nohy, šeptám, ale nemám ústa.
+Nápověda: Cítíš mě, když fouká venku.
+Řešení: Vítr
+
+4. Hadanka:
+Když mě stiskneš, zazvoním, ale nejsem telefon.
+Nápověda: Najdeš mě u vchodu do domu.
+Řešení: Zvonek
+
+5. Hadanka:
+Jsem malý a kulatý, svítím, když se setmí.
+Nápověda: Zapneš mě, když zhasne svět.
+Řešení: Žárovka
+
+6. Hadanka:
+Jsem zelený a rostu na poli, když mě posečeš, udělám chutný salát.
+Nápověda: Jsem oblíbená zelenina na zahradě.
+Řešení: Hlávkový salát
+
+7. Hadanka:
+Skáču, mám dlouhé uši a chutně jím mrkev.
+Nápověda: Najdeš mě u farmy i v pohádkách.
+Řešení: Králík
+
+8. Hadanka:
+Skáču, když prší a v kalužích si zpívám.
+Nápověda: Říká se, že „kváká“ a najdeš ho v rybníce.
+Řešení: Žába
+
+9. Hadanka:
+Jsem velký, šedý, mám dlouhý chobot a žiji v zoo.
+Nápověda: Zní mé jméno jako mohutné zvíře z Afriky nebo Asie.
+Řešení: Slon
+
+10. Hadanka:
+Jsem černobílý a jím bambus, v zoo mě mají moc rádi.
+Nápověda: Znáš mě z Číny a pohádek.
+Řešení: Panda
+
+11. Hadanka:
+Mám ulitu na zádech a pomalu se plazu, kdy mě najdeš, buď opatrný.
+Nápověda: Najdeš mě často na mokřadech nebo v zahradě.
+Řešení: Šnek
+
+12. Hadanka:
+Jsem malý a kulatý, když mě hodíš, letím a odskakuji.
+Nápověda: Hraješ si se mnou na hřišti.
+Řešení: Míč
+
+13. Hadanka:
+Jsem lehký a barevný, když mě pustíš, letím do nebe.
+Nápověda: Často se objevím na oslavách a narozeninách.
+Řešení: Balónek
+
+14. Hadanka:
+Jsem měkký a plný peří, spím se mnou každý den a dávám ti pohodlí.
+Nápověda: Leží vedle tebe v posteli.
+Řešení: Polštář
+-->
+                      
+                      </p>
                     </div>
                   </div>
                 </div>
@@ -352,6 +476,16 @@ Experience, ​Solution In Easy Steps Successful life, ​The core of my work, H
         </div>
     </div>
 </footer>
+    <script>
+        function toggleElement(id) {
+            const element = document.getElementById(id);
+            if (element.classList.contains('hidden')) {
+                element.classList.remove('hidden');
+            } else {
+                element.classList.add('hidden');
+            }
+        }
+    </script>
     <!-- <section class="u-backlink u-clearfix u-grey-80">
       <p class="u-text">
         <span>This site was created with the </span>
