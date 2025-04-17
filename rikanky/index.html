@@ -2,104 +2,400 @@
 <html lang="cs">
 <head>
     <meta charset="UTF-8">
+
+    <!-- Přidat do oblíbených -->
+    <link rel="icon" type="image/png" href="/img/favicon-96x96.png" sizes="96x96">
+    <link rel="icon" type="image/svg+xml" href="/img/favicon.svg">
+    <link rel="shortcut icon" href="/img/favicon.ico">
+    
+    <!-- iOS -->
+    <link rel="apple-touch-icon" sizes="180x180" href="/img/apple-touch-icon.png">
+    <meta name="apple-mobile-web-app-title" content="Úsměvná škola">
+    
+    <!-- Manifest pro usmevnaskola.cz -->
+    <link rel="manifest" href="/img/site.webmanifest">
+    
+    <!-- Barevné schéma pro usmevnaskola.cz -->
+    <meta name="theme-color" content="#ffcc80">
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Říkanky v Usměvné škole</title>
+    <title>Říkanky | &#128522; Úsměvná škola</title>
 
-    <link href="https://fonts.googleapis.com/css2?family=Fredoka&family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://usmevnaskola.cz/inc/style.css">
+    <link rel="stylesheet" href="https://usmevnaskola.cz/css.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
-    <meta property="og:title" content="Říkanky | Usměvná škola">
+    <meta property="og:title" content="Říkanky | Úsměvná škola">
     <meta property="og:description" content="Říkanky v Úsměvné škole">
     <meta property="og:url" content="https://usmevnaskola.cz/rikanky/">
-    <meta property="og:image" content="https://usmevnaskola.cz/img/stranka/skola-hrou.webp">
-    <meta property="og:site_name" content="Usměvná škola">
+    <meta property="og:image" content="https://usmevnaskola.cz/images/karusel/divka-barevne-ruce.jpg">
+    <meta property="og:site_name" content="Úsměvná škola">
     
     <!-- Twitter -->
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Říkanky | Usměvná škola">
+    <meta name="twitter:title" content="Říkanky | Úsměvná škola">
     <meta name="twitter:description" content="Říkanky v Úsměvné škole - zábavné veršování pro radost a učení.">
-    <meta name="twitter:image" content="https://usmevnaskola.cz/img/stranka/skola-hrou.webp">
+    <meta name="twitter:image" content="https://usmevnaskola.cz/images/karusel/divka-barevne-ruce.jpg">
 
     <!-- Google / Schema.org -->
-    <meta itemprop="name" content="Říkanky | Usměvná škola">
+    <meta itemprop="name" content="Říkanky | Úsměvná škola">
     <meta itemprop="description" content="Říkanky v Úsměvné škole - Zábavné veršování pro radost a učení.">
-    <meta itemprop="image" content="https://usmevnaskola.cz/img/stranka/skola-hrou.webp">
+    <meta itemprop="image" content="https://usmevnaskola.cz/images/karusel/divka-barevne-ruce.jpg">
 
     <!-- Fallback -->
-    <meta name="description" content="Říkanky  v Úsměvné škole - zábavné veršování pro radost a učení.">
+    <meta name="description" content="Říkanky v Úsměvné škole - zábavné veršování pro radost a učení.">
+    <!-- Cannonical -->
+    <link rel="canonical" href="https://usmevnaskola.cz/rikanky/" >
+
 </head>
 <body>
 
-<header class="header">
+<!-- Navigační menu -->
+<nav class="navbar navbar-expand-lg navbar-light">
     <div class="container">
-        <h3>
-            <a href="https://usmevnaskola.cz" class="logo">
-                Usměvná škola 
-                <span class="material-icons smile-icon">mood</span>
-            </a>
-        </h3>
-    </div>
-</header>
-
-<section class="hero">
-    <div class="container">
-        <h1>Říkanky</h1>
-        <p>Zábavné veršování pro radost a učení.</p>
-    </div>
-</section>
-
-<section class="topics">
-    <div class="container">
-        <p></p>
-
-        <div class="feature-grid">
-            <!-- Dlaždice 1 -->
-            <div class="feature-item">
-                    <div class="icon"><span class="material-icons" style="font-size: 48px;">menu_book</span></div>
-                    <h4>Říkanka 1</h4>
-                    <p>Co je to?</p>
-            </div>
-            <!-- Dlaždice 2 -->
-            <div class="feature-item">
-                    <div class="icon"><span class="material-icons" style="font-size: 48px;">record_voice_over</span></div>
-                    <h4>Říkanka 2</h4>
-                    <p>Kdo je to?</p>
-            </div>
-
-            <!-- Dlaždice 3 -->
-            <div class="feature-item">
-                    <div class="icon"><span class="material-icons" style="font-size: 48px;">sports_esports</span></div>
-                    <h4>Říkanka 3</h4>
-                    <p>Proč je to?</p>
-            </div>
-
-
+        <a class="navbar-brand" href="/"> <span class="emoji-logo">&#128522;</span>  Úsměvná škola</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item"><a class="nav-link" href="/baje-a-povesti/">Báje a pověsti</a></li>
+                <li class="nav-item"><a class="nav-link" href="/rikanky/">Říkanky</a></li>
+                <li class="nav-item"><a class="nav-link" href="/hadanky/">Hádanky</a></li>
+                <li class="nav-item"><a class="nav-link" href="/o-nas.html">O nás</a></li>
+            </ul>
         </div>
     </div>
+</nav>
+
+<!-- Karusel s obrázky (volitelně možné zakomentovat) -->
+<div id="carouselUsmevnaSkola" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+        <div class="carousel-item active">
+            <img src="/images/karusel/divka-barevne-ruce.jpg" class="d-block w-100" alt="Dívka s barevnými prsty se směje">
+        </div>
+        <div class="carousel-item">
+            <img src="/images/karusel/stavebnice-hra.jpg" class="d-block w-100" alt="Stavebnice hra">
+        </div>
+        <div class="carousel-item">
+            <img src="/images/karusel/dite-balonky.jpg" class="d-block w-100" alt="Dítě s balonky">
+        </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselUsmevnaSkola" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselUsmevnaSkola" data-bs-slide="next">
+        <span class="carousel-control-next-icon"></span>
+    </button>
+</div>
+
+<!-- Nadpis pro stránku -->
+<!-- <h1 class="text-center my-4">Úsměvná škola</h1> -->
+<h1 class="text-center my-4">Říkanky v &#128522; <!-- ������ -->Úsměvná škola</h1>
+
+
+
+<!-- Sekce informace -->
+<section class="container my-4">
+    <div class="alert alert-warning">
+        <h4>Co znamenají ikonky u říkanek?</h4>
+        <p class="mb-1">
+            <span style="font-size: 1.4em;">&#128196;</span> <!-- ������ --> <strong>PDF / Omalovánka:</strong> kliknutím se zobrazí možnost stáhnout omalovánku k dané říkance.
+        </p>
+        <p class="mb-1">
+            <span style="font-size: 1.4em;">&#128266;</span> <!-- ������ --> <strong>Audio:</strong> přehraje nahrávku říkanky.
+        </p>
+        <p class="mb-0">
+            <span style="font-size: 1.4em;">&#129513;</span> <!-- ������ --> <strong>Aktivita:</strong> nápad na pohybovou nebo hravou činnost související s říkankou.
+        </p>
+    </div>
 </section>
 
 
+<!-- Sekce pro říkanky z bájí a pověstí -->
+<div class="container my-5">
+  <h2 class="text-center mb-4">Říkanky z českých bájí</h2>
+  <div class="row g-3">
 
-<section class="features">
-    <div class="container">
-        <h3>Proč si říkat české říkanky?</h3>
-        <div class="feature-grid">
-            <div class="feature-item">
-                <div class="icon"><span class="material-icons" style="font-size: 48px;">child_friendly</span></div> <!-- Ikonka dítěte -->
+        <!-- Ikona PDF -->
+        <!--<div class="activity-icon-box" onclick="toggleActivity(this.querySelector('.activity-box-box'))">
+            &#128196; --> <!-- ?? -->
+            <!--<div class="activity-box-box">
+                <strong>Ke stáhnutí:</strong><br>
+                <a href="https://usmevnaskola.cz/pdf/rikanky/snecku-sneckus.pdf">Stáhnout jako omalovánku</a>
+            </div>
+        </div> -->
+        <!-- Ikona audio 
+        <div class="activity-icon-box" onclick="toggleActivity(this.querySelector('.activity-box-box'))">
+            &#128266;--> <!--?? -->
+            <!--<div class="activity-box-box">
+                <strong>Audio:</strong><br>            
+                <audio controls style="width: 100%;">
+                    <source src="/audio/rikanky/snecku-snecku-lukas.mp3" type="audio/mpeg">
+                    Váš prohlížeč nepodporuje přehrávání audia.
+                </audio>
+            </div>
+        </div> -->  
+                    
+<!-- 1 -->
+<div class="col-12 col-md-6 col-lg-3">
+  <div class="p-3 rounded h-100 d-flex flex-column" style="background-color: #FFEB3B;">
+    <h4>Pražské kameny</h4>
+    <p>
+      Na kopci je tichý kout,<br>
+      kamenný tam stojí sloup.<br>
+      Lidé říkají: „Pozor dej!<br>
+      Tam prý sídlí kouzelný děj.“
+    </p>
+    <div class="d-flex justify-content-end gap-2 mt-auto">
+        <!-- Ikona audio -->
+        <div class="activity-icon-box" onclick="toggleActivity(this.querySelector('.activity-box-box'))">
+            &#128266; <!-- audio -->
+            <div class="activity-box-box">
+                <strong>Audio:</strong><br>Lukáš<br>         
+                <audio controls style="width: 100%;">
+                    <source src="/audio/rikanky/prazske-kameny-lukas.mp3" type="audio/mpeg">
+                    Váš prohlížeč nepodporuje přehrávání audia.
+                </audio>
+            </div>
+        </div>
+      <!-- ikonka aktivity -->
+      <div class="activity-icon-box" onclick="toggleActivity(this.querySelector('.activity-box-box'))">
+        &#129513;
+        <div class="activity-box-box"><strong>Aktivita:</strong><br> Najdi venku nějaký kámen, pohlaď ho a řekni mu tajné přání. &#128511; <!-- ������ socha (kámen / Moai) --><br><em>(Báje: Vyšehradské kameny)</em></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- 2 -->
+<div class="col-12 col-md-6 col-lg-3">
+  <div class="p-3 rounded h-100 d-flex flex-column" style="background-color: #81C784;">
+    <h4>Libuše</h4>
+    <p>
+      Libuše na skále stála,<br>
+      do dálky se podívala.<br>
+      „Tady město vyroste,<br>
+      každý z něj radost dostane!“
+    </p>
+    <div class="d-flex justify-content-end gap-2 mt-auto">
+      <!-- ikonka aktivity -->
+      <div class="activity-icon-box" onclick="toggleActivity(this.querySelector('.activity-box-box'))">
+        &#129513;
+        <div class="activity-box-box"><strong>Aktivita:</strong><br> Postav město z kostek nebo lega a pojmenuj ho jako Libuše. &#127984; <!-- ������ hrad --><br><em>(Báje: O kněžně Libuši)</em></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- 3 -->
+<div class="col-12 col-md-6 col-lg-3">
+  <div class="p-3 rounded h-100 d-flex flex-column" style="background-color: #64B5F6;">
+    <h4>Blaničtí rytíři</h4>
+    <p>
+      V hoře spí sto rytířů,<br>
+      čekají tam v klidu tůň.<br>
+      Když je zemi nejhůř zle,<br>
+      vyjedou jak v pohádce.
+    </p>
+    <div class="d-flex justify-content-end gap-2 mt-auto">
+      <!-- ikonka aktivity -->
+      <div class="activity-icon-box" onclick="toggleActivity(this.querySelector('.activity-box-box'))">
+        &#129513;
+        <div class="activity-box-box"><strong>Aktivita:</strong><br> Udělej z peřin nebo dek jeskyni a hraj si na spícího rytíře. ⚔️<br><em>(Báje: Blaničtí rytíři)</em></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- 4 -->
+<div class="col-12 col-md-6 col-lg-3">
+  <div class="p-3 rounded h-100 d-flex flex-column" style="background-color: #FF7043;">
+    <h4>Krakonoš</h4>
+    <p>
+      V horách bydlí Krakonoš,<br>
+      velký klobouk, dlouhý nos.<br>
+      Stráží stromy, zvířátka,<br>
+      má rád děti, pohádka!
+    </p>
+    <div class="d-flex justify-content-end gap-2 mt-auto">
+      <!-- ikonka aktivity -->
+      <div class="activity-icon-box" onclick="toggleActivity(this.querySelector('.activity-box-box'))">
+        &#129513;
+        <div class="activity-box-box"><strong>Aktivita:</strong><br> Udělej z papíru klobouk a zahraj si na Krakonoše. &#127913; <!-- ������ klobouk (Krakonoš) --><br><em>(Báje: O Krakonošovi)</em></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- 5 -->
+<div class="col-12 col-md-6 col-lg-3">
+  <div class="p-3 rounded h-100 d-flex flex-column" style="background-color: #FFF176;">
+    <h4>Přemysl Oráč</h4>
+    <p>Oral pole, skromný pán,<br> přišla zpráva: vládce sám.<br> Z pluhu vstal, boty vzal,<br> do hradu pak kráčet šel dál.</p>
+    <div class="d-flex justify-content-end gap-2 mt-auto">
+      <div class="activity-icon-box" onclick="toggleActivity(this.querySelector('.activity-box-box'))">
+        &#129513;
+        <div class="activity-box-box"><strong>Aktivita:</strong><br> Předveď, jak oráš pole – ruce jako pluh! &#129489;&#8205;&#127806; <!-- ������‍������ zemědělec (Přemysl Oráč) --><br><em>(Báje: O Přemyslovi Oráči)</em></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- 6 -->
+<div class="col-12 col-md-6 col-lg-3">
+  <div class="p-3 rounded h-100 d-flex flex-column" style="background-color: #AED581;">
+    <h4>Dívčí válka</h4>
+    <p>Dívky se zlobí, chtějí vládu mít,<br> s kluky v boji začnou se bít.<br> Vlasta velí, Bába chrání hrad,<br> hrdinky statečné má každý rád!</p>
+    <div class="d-flex justify-content-end gap-2 mt-auto">
+      <div class="activity-icon-box" onclick="toggleActivity(this.querySelector('.activity-box-box'))">
+        &#129513;
+        <div class="activity-box-box"><strong>Aktivita:</strong><br> Založ „dívčí pevnost“ z dek a polštářů. &#127984; <!-- ������ hrad --><br><em>(Báje: Dívčí válka)</em></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- 7 -->
+<div class="col-12 col-md-6 col-lg-3">
+  <div class="p-3 rounded h-100 d-flex flex-column" style="background-color: #4FC3F7;">
+    <h4>Bruncvík a lev</h4>
+    <p>Bruncvík šel do světa dál,<br> s mečem kouzelným bojoval.<br> Pomohl lvovi, silný byl,<br> domů se vrátil, když dobro činil.</p>
+    <div class="d-flex justify-content-end gap-2 mt-auto">
+      <div class="activity-icon-box" onclick="toggleActivity(this.querySelector('.activity-box-box'))">
+        &#129513;
+        <div class="activity-box-box"><strong>Aktivita:</strong><br> Nakresli Bruncvíka a jeho lva. &#129409; <!-- ������ lev --><br><em>(Báje: O Bruncvíkovi)</em></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- 8 -->
+<div class="col-12 col-md-6 col-lg-3">
+  <div class="p-3 rounded h-100 d-flex flex-column" style="background-color: #FFB74D;">
+    <h4>Bílá paní</h4>
+    <p>Bílá paní chodí v noci,<br> světlem svítí ve své moci.<br> Neublíží, jen hlídá klid,<br> děti spát chce v pokoji mít.</p>
+    <div class="d-flex justify-content-end gap-2 mt-auto">
+      <div class="activity-icon-box" onclick="toggleActivity(this.querySelector('.activity-box-box'))">
+        &#129513;
+        <div class="activity-box-box"><strong>Aktivita:</strong><br> Pověz si s kamarády, co bys hlídal jako Bílá paní. &#128123; <!-- ������ duch (Bílá paní) --><br><em>(Báje: O Bílé paní)</em></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- 9 -->
+<div class="col-12 col-md-6 col-lg-3">
+  <div class="p-3 rounded h-100 d-flex flex-column" style="background-color: #A5D6A7;">
+    <h4>Golem z hlíny</h4>
+    <p>Rabín z hlíny Golema stvořil,<br> ten pak město chránit zvolil.<br> Písmena mu moc dává,<br> když je má – tak pomáhá.</p>
+    <div class="d-flex justify-content-end gap-2 mt-auto">
+      <div class="activity-icon-box" onclick="toggleActivity(this.querySelector('.activity-box-box'))">
+        &#129513;
+        <div class="activity-box-box"><strong>Aktivita:</strong><br> Vyrob si svého Golema z modelíny. &#129302; <!-- ������ robot (Golem) --><br><em>(Báje: O Golemovi)</em></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- 10 -->
+<div class="col-12 col-md-6 col-lg-3">
+  <div class="p-3 rounded h-100 d-flex flex-column" style="background-color: #90CAF9;">
+    <h4>Horymá Hrom</h4>
+    <p>Horymá Hrom dupá v lesích,<br> v bouři zní jeho hlas silných.<br> Mraky žene, vítr vál,<br> blesky z nebe rozhazoval.</p>
+    <div class="d-flex justify-content-end gap-2 mt-auto">
+      <div class="activity-icon-box" onclick="toggleActivity(this.querySelector('.activity-box-box'))">
+        &#129513;
+        <div class="activity-box-box"><strong>Aktivita:</strong><br> Udělej zvuky bouřky – dupání, tleskání, foukání. &#127793; <!-- ������ strom (rodokmen) -->️<br><em>(Báje: Horymá Hrom – personifikace bouře)</em></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- 11 -->
+<div class="col-12 col-md-6 col-lg-3">
+  <div class="p-3 rounded h-100 d-flex flex-column" style="background-color: #FF8A65;">
+    <h4>O Janovi, co hledal spravedlnost</h4>
+    <p>Jan z Husi, moudrý pán,<br> pravdu chtěl, i když byl sám.<br> Knížky psal, u lidí stál,<br> za své slovo život dal.</p>
+    <div class="d-flex justify-content-end gap-2 mt-auto">
+      <div class="activity-icon-box" onclick="toggleActivity(this.querySelector('.activity-box-box'))">
+        &#129513;
+        <div class="activity-box-box"><strong>Aktivita:</strong><br> Vymysli krátký vzkaz pravdy pro kamarády. &#9997;&#65039; <!-- ✍️ psaní / vzkaz -->️<br><em>(Báje: O Janu Husovi)</em></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- 12 -->
+<div class="col-12 col-md-6 col-lg-3">
+  <div class="p-3 rounded h-100 d-flex flex-column" style="background-color: #FFF59D;">
+    <h4>Kořen rodu Přemyslovců</h4>
+    <p>Začal náš rod pod lípou stát,<br> Přemysl s Libuší začli vládnout rád.<br> V srdci Čech zapustil kořen,<br> rod pokračuje – věčný to vzorek.</p>
+    <div class="d-flex justify-content-end gap-2 mt-auto">
+      <div class="activity-icon-box" onclick="toggleActivity(this.querySelector('.activity-box-box'))">
+        &#129513;
+        <div class="activity-box-box"><strong>Aktivita:</strong><br> Nakresli strom s jmény své rodiny. &#127793; <!-- ������ strom (rodokmen) --><br><em>(Báje: O Přemyslovi a rodu Přemyslovců)</em></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+  </div>
+</div>
+
+
+
+
+
+
+<div class="container my-5">
+    <nav class="mt-5 text-center">
+        <ul class="pagination justify-content-center">
+            <li class="page-item"><a class="page-link" href="/rikanky/">&#127984; 1. Z bájí</a></li>
+            <li class="page-item"><a class="page-link" href="/rikanky/rikanky.html?stranka=2">2</a></li>
+            <li class="page-item"><a class="page-link" href="/rikanky/rikanky.html?stranka=3">3</a></li>
+            <li class="page-item"><a class="page-link" href="/rikanky/rikanky.html?stranka=4">4</a></li>
+            <li class="page-item"><a class="page-link" href="/rikanky/rikanky.html?stranka=5">5</a></li>
+            <li class="page-item"><a class="page-link" href="/rikanky/rikanky.html?stranka=6">6</a></li>
+            <li class="page-item"><a class="page-link" href="/rikanky/rikanky.html?stranka=7">7</a></li>
+            <li class="page-item"><a class="page-link" href="/rikanky/rikanky.html?stranka=8">8</a></li>
+            <li class="page-item"><a class="page-link" href="/rikanky/rikanky.html?stranka=9">9</a></li>
+            <li class="page-item"><a class="page-link" href="/rikanky/rikanky.html?stranka=10">10</a></li>
+            <li class="page-item">
+              <a class="page-link" href="/rikanky/klasicke-rikanky.html" title="Původní říkanky">&#128220; Klasické</a>
+            </li>
+        </ul>
+    </nav>
+</div>
+    
+
+<!-- Sekce PROČ -->
+<section class="container py-5">
+    <h2 class="text-center mb-4">Proč si říkat české říkanky?</h2>
+    <div class="row">
+        <div class="col-md-4 mb-3 d-flex">
+            <div class="p-4 text-center bg-light rounded shadow h-100 w-100">
+                <span class="material-icons" style="font-size: 48px; color: #FF9800;">child_friendly</span>
                 <h4>Zábava pro nejmenší</h4>
                 <p>Říkanky přinášejí dětem radost a smích, rozvíjejí jejich představivost a podněcují jejich kreativitu.</p>
             </div>
-            <div class="feature-item">
-                <div class="icon"><span class="material-icons" style="font-size: 48px;">hearing</span></div> <!-- Ikonka ucha -->
+        </div>
+        <div class="col-md-4 mb-3 d-flex">
+            <div class="p-4 text-center bg-light rounded shadow h-100 w-100">
+                <span class="material-icons" style="font-size: 48px; color: #64B5F6;">hearing</span>
                 <h4>Rozvoj řeči</h4>
                 <p>Pravidelné opakování říkanek pomáhá dětem zlepšovat výslovnost, rytmus řeči a slovní zásobu.</p>
             </div>
-            <div class="feature-item">
-                <div class="icon"><span class="material-icons" style="font-size: 48px;">sentiment_very_satisfied</span></div> <!-- Ikonka radosti -->
+        </div>
+        <div class="col-md-4 mb-3 d-flex">
+            <div class="p-4 text-center bg-light rounded shadow h-100 w-100">
+                <span class="material-icons" style="font-size: 48px; color: #81C784;">sentiment_very_satisfied</span>
                 <h4>Společná radost</h4>
                 <p>Říkanky spojují děti a dospělé, přinášejí pohodu a posilují vzájemné pouto při společném hraní a zpívání.</p>
             </div>
@@ -109,77 +405,50 @@
 
 
 
-
-<footer class="footer">
+<!-- Patička -->
+<footer>
     <div class="container">
-        <div class="footer-grid">
-            <!-- Sloupec 1: Provozovatel -->
-
-            <!-- Sloupec 2: O projektu -->
-            <div class="footer-column">
-                <h4>O projektu</h4>
-                <ul>
-                    <li>Výukové materiály pro 5-7 let</li>
-                    <li>Podpora české kultury</li>
-                    <li>Příprava do školy</li>
-                    <li>Zábava i poučení</li>
-                    <li>Tradiční hodnoty moderněji</li>
-
+        <div class="row">
+            <div class="col-md-3">
+                <h5>O projektu</h5>
+                <p>Úsměvná škola přináší hravé učení pro děti i rodiče.</p>
+            </div>
+            <div class="col-md-3">
+                <h5>Odkazy</h5>
+                <ul class="list-unstyled">
+                    <li><a href="/baje-a-povesti/" class="text-white">Báje a pověsti</a></li>
+                    <li><a href="/rikanky/" class="text-white">Říkanky</a></li>
+                    <li><a href="/hadanky/" class="text-white">Hádanky</a></li>
                 </ul>
             </div>
-            <!-- Sloupec 3: Užitečné odkazy -->
-            <div class="footer-column">
-                <h4>Užitečné sekce</h4>
-                <ul>
-                    <li><a href="/ceske-baje-a-povesti/">České báje a pověsti</a></li>
-                    <li><a href="/rikanky/">České říkanky</a></li>
-                    <li><a href="/hadanky/">České hádanky</a></li>
-                    
-                    <!--<li><a href="/pdf-ke-stazeni/">PDF ke stažení</a></li>-->
-                    <!--<li><a href="/skola-hrou/">Škola hrou</a></li>-->
-
-                </ul>
+            <div class="col-md-3">
+            <h5>Právní informace</h5>
+            <ul class="list-unstyled">
+                <li><a href="/licence.html" class="text-white">Licence</a></li>
+                <li><a href="/ochrana-osobnich-udaju.html" class="text-white">Ochrana osobních údajů</a></li>
+                <li><a href="/podminky-uziti.html" class="text-white">Podmínky užití</a></li>
+            </ul>
             </div>
-            <!-- Sloupec 4: Kontakt -->
-            <div class="footer-column">
-                <h4>Inspirace</h4>
-                <ul>
-                    <li><a href="/o-nas">O nás</a></li>
-                    <li><a href="/pdf-ke-stazeni/">Stáhněte si naše PDF</a></li>
-                    <li><a href="/ochrana-osobnich-udaju">Ochrana osobních údajů</a></li>
-                    <li><a href="/podminky-uziti">Podmínky užití</a></li>
-
-                </ul>
-            </div>
-            <!-- Sloupec 4: Provozovatel -->
-            <div class="footer-column">
-                <h4>Provozovatel</h4>
-                <ul>
-                <li><a href="https://ekultura.eu">eKultura, z.s.</a></li>
-                <li>Email: <a href="mailto:media@ekultura.cz">media@ekultura.cz</a></li>
-                <li><a href="https://or.justice.cz/ias/ui/rejstrik-firma.vysledky?subjektId=1242932&typ=PLATNY">IČO: 21682305</a></li>
-                <li>Spisová značka: L 79184 v Praze</li>
-    <li></li>
+            <div class="col-md-3">
+                <h5>Provozovatel</h5>
+                <ul class="list-unstyled">
+                    <li><a href="https://ekultura.eu/" class="text-white">eKultura, z.s.</a></li>
+                    <li><a href="https://or.justice.cz/ias/ui/rejstrik-firma.vysledky?subjektId=1242932&typ=PLATNY" class="text-white">IČO: 21682305</a></li>
+                    <li><a href="https://or.justice.cz/ias/ui/rejstrik-firma.vysledky?subjektId=1242932&typ=PLATNY" class="text-white">Spis.zn: L 79184</a></li>
                 </ul>
             </div>
         </div>
-
-
-<div class="social-icons">
-        <a href="https://www.facebook.com/profile.php?id=61561884747289" target="_blank"><span class="material-icons">facebook</span></a>
-        <a href="https://x.com/ekultura_eu" target="_blank"><span class="material-icons">alternate_email</span></a>
-        <a href="https://www.linkedin.com/company/ekultura/" target="_blank"><span class="material-icons">work</span></a>
-        <a href="https://www.youtube.com/@eKultura-eu" target="_blank"><span class="material-icons">play_circle</span></a>
-        <a href="https://www.instagram.com/eKultura_eu" target="_blank"><span class="material-icons">
-photo_camera</span></a>
-</div>
-
-        <div class="footer-bottom">
-            <p>© 2024 Usměvná škola | Všechna práva vyhrazena</p>
-        </div>
+        <p class="mt-3">&copy; 2024 Úsměvná škola. Všechna práva vyhrazena.</p>
     </div>
 </footer>
-
-
+<script>
+function toggleActivity(box) {
+    box.style.display = box.style.display === 'block' ? 'none' : 'block';
+    // Skryj všechny ostatní boxy
+    document.querySelectorAll('.activity-box-box').forEach(el => {
+        if (el !== box) el.style.display = 'none';
+    });
+}
+</script>
 </body>
 </html>

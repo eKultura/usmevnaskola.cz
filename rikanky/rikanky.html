@@ -1,0 +1,283 @@
+
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+
+    <!-- Přidat do oblíbených -->
+    <link rel="icon" type="image/png" href="/img/favicon-96x96.png" sizes="96x96">
+    <link rel="icon" type="image/svg+xml" href="/img/favicon.svg">
+    <link rel="shortcut icon" href="/img/favicon.ico">
+    
+    <!-- iOS -->
+    <link rel="apple-touch-icon" sizes="180x180" href="/img/apple-touch-icon.png">
+    <meta name="apple-mobile-web-app-title" content="Úsměvná škola">
+    
+    <!-- Manifest pro usmevnaskola.cz -->
+    <link rel="manifest" href="/img/site.webmanifest">
+    
+    <!-- Barevné schéma pro usmevnaskola.cz -->
+    <meta name="theme-color" content="#ffcc80">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Říkanky | Úsměvná škola</title>
+
+    <link rel="stylesheet" href="https://usmevnaskola.cz/css.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+
+</head>
+<body>
+
+
+
+<!-- Navigační menu -->
+<nav class="navbar navbar-expand-lg navbar-light">
+    <div class="container">
+        <a class="navbar-brand" href="/"> <span class="emoji-logo">&#128522;</span>  Úsměvná škola</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item"><a class="nav-link" href="/baje-a-povesti/">Báje a pověsti</a></li>
+                <li class="nav-item"><a class="nav-link" href="/rikanky/">Říkanky</a></li>
+                <li class="nav-item"><a class="nav-link" href="/hadanky/">Hádanky</a></li>
+                <li class="nav-item"><a class="nav-link" href="/o-nas.html">O nás</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<!-- Karusel s obrázky (volitelně možné zakomentovat) -->
+<div id="carouselUsmevnaSkola" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+        <div class="carousel-item active">
+            <img src="/images/karusel/divka-barevne-ruce.jpg" class="d-block w-100" alt="Dívka s barevnými prsty se směje">
+        </div>
+        <div class="carousel-item">
+            <img src="/images/karusel/stavebnice-hra.jpg" class="d-block w-100" alt="Stavebnice hra">
+        </div>
+        <div class="carousel-item">
+            <img src="/images/karusel/dite-balonky.jpg" class="d-block w-100" alt="Dítě s balonky">
+        </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselUsmevnaSkola" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselUsmevnaSkola" data-bs-slide="next">
+        <span class="carousel-control-next-icon"></span>
+    </button>
+</div>
+
+<!-- Nadpis pro stránky bez karuselu -->
+<!-- <h1 class="text-center my-4">Úsměvná škola</h1> -->
+<h1 class="text-center my-4">Říkanky v &#128522; Úsměvná škola</h1>
+
+
+<!-- Sekce informace -->
+<section class="container my-4">
+    <div class="alert alert-warning">
+        <h4>Co znamenají ikonky u říkanek?</h4>
+        <p class="mb-1">
+            <span style="font-size: 1.4em;">&#128196;</span> <!-- ������ --> <strong>PDF / Omalovánka:</strong> kliknutím se zobrazí možnost stáhnout omalovánku k dané říkance.
+        </p>
+        <p class="mb-1">
+            <span style="font-size: 1.4em;">&#128266;</span> <!-- ������ --> <strong>Audio:</strong> přehraje nahrávku říkanky.
+        </p>
+        <p class="mb-0">
+            <span style="font-size: 1.4em;">&#129513;</span> <!-- ������ --> <strong>Aktivita:</strong> nápad na pohybovou nebo hravou činnost související s říkankou.
+        </p>
+    </div>
+</section>
+
+<div class="container my-5">
+    <h2 class="text-center mb-4">Říkanky</h2>
+    <div class="row g-3" id="rikanky-container"></div>
+
+    <nav class="mt-5 text-center">
+        <ul class="pagination justify-content-center">
+            <li class="page-item"><a class="page-link" href="/rikanky/">&#127984; 1. Z bájí</a></li>
+            <li class="page-item"><a class="page-link" href="/rikanky/rikanky.html?stranka=2">2</a></li>
+            <li class="page-item"><a class="page-link" href="/rikanky/rikanky.html?stranka=3">3</a></li>
+            <li class="page-item"><a class="page-link" href="/rikanky/rikanky.html?stranka=4">4</a></li>
+            <li class="page-item"><a class="page-link" href="/rikanky/rikanky.html?stranka=5">5</a></li>
+            <li class="page-item"><a class="page-link" href="/rikanky/rikanky.html?stranka=6">6</a></li>
+            <li class="page-item"><a class="page-link" href="/rikanky/rikanky.html?stranka=7">7</a></li>
+            <li class="page-item"><a class="page-link" href="/rikanky/rikanky.html?stranka=8">8</a></li>
+            <li class="page-item"><a class="page-link" href="/rikanky/rikanky.html?stranka=9">9</a></li>
+            <li class="page-item"><a class="page-link" href="/rikanky/rikanky.html?stranka=10">10</a></li>
+            <li class="page-item">
+              <a class="page-link" href="/rikanky/klasicke-rikanky.html" title="Původní říkanky">&#128220; Klasické</a>
+            </li>
+        </ul>
+    </nav>
+</div>
+
+
+
+
+<!-- Patička -->
+<footer>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3">
+                <h5>O projektu</h5>
+                <p>Úsměvná škola přináší hravé učení pro děti i rodiče.</p>
+            </div>
+            <div class="col-md-3">
+                <h5>Odkazy</h5>
+                <ul class="list-unstyled">
+                    <li><a href="/baje-a-povesti/" class="text-white">Báje a pověsti</a></li>
+                    <li><a href="/rikanky/" class="text-white">Říkanky</a></li>
+                    <li><a href="/hadanky/" class="text-white">Hádanky</a></li>
+                </ul>
+            </div>
+            <div class="col-md-3">
+            <h5>Právní informace</h5>
+            <ul class="list-unstyled">
+                <li><a href="/licence.html" class="text-white">Licence</a></li>
+                <li><a href="/ochrana-osobnich-udaju.html" class="text-white">Ochrana osobních údajů</a></li>
+                <li><a href="/podminky-uziti.html" class="text-white">Podmínky užití</a></li>
+            </ul>
+            </div>
+            <div class="col-md-3">
+                <h5>Provozovatel</h5>
+                <ul class="list-unstyled">
+                    <li><a href="https://ekultura.eu/" class="text-white">eKultura, z.s.</a></li>
+                    <li><a href="https://or.justice.cz/ias/ui/rejstrik-firma.vysledky?subjektId=1242932&typ=PLATNY" class="text-white">IČO: 21682305</a></li>
+                    <li><a href="https://or.justice.cz/ias/ui/rejstrik-firma.vysledky?subjektId=1242932&typ=PLATNY" class="text-white">Spis.zn: L 79184</a></li>
+                </ul>
+            </div>
+        </div>
+        <p class="mt-3">&copy; 2024 Úsměvná škola. Všechna práva vyhrazena.</p>
+    </div>
+</footer>
+
+
+
+
+<script>
+function toggleActivity(box) {
+    box.style.display = box.style.display === 'block' ? 'none' : 'block';
+    document.querySelectorAll('.activity-box-box').forEach(el => {
+        if (el !== box) el.style.display = 'none';
+    });
+}
+
+function getStrankaParam() {
+    const urlParams = new URLSearchParams(window.location.search);
+    const param = urlParams.get('stranka');
+    const cislo = parseInt(param, 10);
+    return (cislo && cislo >= 1 && cislo <= 10) ? cislo : 1;
+}
+
+const stranka = getStrankaParam();
+const jsonUrl = stranka === 1 
+    ? `json-rikanky-1.json` 
+    : `json-rikanky-${stranka}.json`;
+const startIndex = (stranka - 1) * 12 + 1;
+
+fetch(jsonUrl)
+    .then(response => {
+        if (!response.ok) throw new Error('Soubor nenalezen');
+        return response.json();
+    })
+    .then(data => {
+        const container = document.getElementById('rikanky-container');
+        container.innerHTML = "";
+
+        data.forEach((rikanka, index) => {
+            const rikankaCislo = startIndex + index;
+
+            const audioHtml = rikanka.audio
+                ? `<div class="activity-icon-box" onclick="toggleActivity(this.querySelector('.activity-box-box'))">
+                    &#128266;  <!-- audio ������ -->
+                    <div class="activity-box-box">
+                        <strong>Audio:</strong><br>
+                        <audio controls style="width: 100%;">
+                            <source src="${rikanka.audio}" type="audio/mpeg">
+                            Váš prohlížeč nepodporuje přehrávání audia.
+                        </audio>
+                    </div>
+                </div>` : "";
+
+            const pdfHtml = rikanka.pdf
+                ? `<div class="activity-icon-box" onclick="toggleActivity(this.querySelector('.activity-box-box'))">
+                    &#128196; <!-- pdf ������ -->
+                    <div class="activity-box-box">
+                        <strong>PDF:</strong><br>
+                        <a href="${rikanka.pdf}" target="_blank">Omalovánka</a>
+                    </div>
+                </div>` : "";
+
+            const col = document.createElement('div');
+            col.className = 'col-12 col-md-6 col-lg-3';
+            
+            const wrapper = document.createElement('div');
+            wrapper.className = 'p-3 rounded h-100 d-flex flex-column';
+            wrapper.style.backgroundColor = '#FFEB3B';
+            
+            const nadpis = document.createElement('h4');
+            nadpis.innerText = `${rikanka.nazev || 'Říkanka'} ${rikankaCislo}`;
+            
+            const text = document.createElement('p');
+            text.innerHTML = rikanka.rikanka.replace(/\n/g, '<br>');  // <== KLÍČOVÉ
+            
+            const icons = document.createElement('div');
+            icons.className = 'd-flex justify-content-end gap-2 mt-auto';
+            
+            if (rikanka.pdf) {
+                icons.innerHTML += `
+                    <div class="activity-icon-box" onclick="toggleActivity(this.querySelector('.activity-box-box'))">
+                        &#128196;
+                        <div class="activity-box-box">
+                            <strong>PDF:</strong><br>
+                            <a href="${rikanka.pdf}" target="_blank">Omalovánka</a>
+                        </div>
+                    </div>`;
+            }
+            
+            if (rikanka.audio) {
+                icons.innerHTML += `
+                    <div class="activity-icon-box" onclick="toggleActivity(this.querySelector('.activity-box-box'))">
+                        &#128266;
+                        <div class="activity-box-box">
+                            <strong>Audio:</strong><br>
+                            <audio controls style="width: 100%;">
+                                <source src="${rikanka.audio}" type="audio/mpeg">
+                                Váš prohlížeč nepodporuje přehrávání audia.
+                            </audio>
+                        </div>
+                    </div>`;
+            }
+            
+            icons.innerHTML += `
+                <div class="activity-icon-box" onclick="toggleActivity(this.querySelector('.activity-box-box'))">
+                    &#129513;
+                    <div class="activity-box-box">
+                        <strong>Aktivita:</strong><br>
+                        ${rikanka.aktivita}
+                    </div>
+                </div>`;
+            
+            wrapper.appendChild(nadpis);
+            wrapper.appendChild(text);
+            wrapper.appendChild(icons);
+            col.appendChild(wrapper);
+            container.appendChild(col);
+
+        });
+    })
+    .catch(error => {
+        document.getElementById('rikanky-container').innerHTML = "<p class='text-danger'>Nepodařilo se načíst říkanky.</p>";
+    });
+</script>
+</body>
+</html>

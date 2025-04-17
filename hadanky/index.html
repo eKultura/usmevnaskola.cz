@@ -1,0 +1,560 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+
+    <!-- Přidat do oblíbených -->
+    <link rel="icon" type="image/png" href="/img/favicon-96x96.png" sizes="96x96">
+    <link rel="icon" type="image/svg+xml" href="/img/favicon.svg">
+    <link rel="shortcut icon" href="/img/favicon.ico">
+    
+    <!-- iOS -->
+    <link rel="apple-touch-icon" sizes="180x180" href="/img/apple-touch-icon.png">
+    <meta name="apple-mobile-web-app-title" content="Úsměvná škola">
+    
+    <!-- Manifest pro usmevnaskola.cz -->
+    <link rel="manifest" href="/img/site.webmanifest">
+    
+    <!-- Barevné schéma pro usmevnaskola.cz -->
+    <meta name="theme-color" content="#ffcc80">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Hádanky | &#128522; Úsměvná škola</title>
+
+    <link rel="stylesheet" href="https://usmevnaskola.cz/css.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Hádanky | Úsměvná škola">
+    <meta property="og:description" content="Chytré otázky k zamyšlení a zábavě.">
+    <meta property="og:url" content="https://usmevnaskola.cz/hadanky/">
+    <meta property="og:image" content="https://usmevnaskola.cz/images/karusel/divka-barevne-ruce.jpg">
+    <meta property="og:site_name" content="Usměvná škola">
+    
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Škola hrou | Usměvná škola">
+    <meta name="twitter:description" content="Hádanky v Úsměvné škole - Chytré otázky k zamyšlení a zábavě.">
+    <meta name="twitter:image" content="https://usmevnaskola.cz/images/karusel/divka-barevne-ruce.jpg">
+
+    <!-- Google / Schema.org -->
+    <meta itemprop="name" content="Hádanky | Úsměvná škola">
+    <meta itemprop="description" content="Hádanky v Úsměvné škole - chytré otázky k zamyšlení a zábavě.">
+    <meta itemprop="image" content="https://usmevnaskola.cz/images/karusel/divka-barevne-ruce.jpg">
+
+    <!-- Fallback -->
+    <meta name="description" content="Hádanky  v Úsměvné škole - chytré otázky k zamyšlení a zábavě.">
+
+    <!-- Cannonical -->
+    <link rel="canonical" href="https://usmevnaskola.cz/hadanky/">
+
+</head>
+<body>
+
+<!-- Navigační menu -->
+<nav class="navbar navbar-expand-lg navbar-light">
+    <div class="container">
+        <a class="navbar-brand" href="/"> <span class="emoji-logo">&#128522;</span>  Úsměvná škola</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item"><a class="nav-link" href="/baje-a-povesti/">Báje a pověsti</a></li>
+                <li class="nav-item"><a class="nav-link" href="/rikanky/">Říkanky</a></li>
+                <li class="nav-item"><a class="nav-link" href="/hadanky/">Hádanky</a></li>
+                <li class="nav-item"><a class="nav-link" href="/o-nas.html">O nás</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<!-- Karusel s obrázky (volitelně možné zakomentovat) -->
+<div id="carouselUsmevnaSkola" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+        <div class="carousel-item active">
+            <img src="/images/karusel/divka-barevne-ruce.jpg" class="d-block w-100" alt="Dívka s barevnými prsty se směje">
+        </div>
+        <div class="carousel-item">
+            <img src="/images/karusel/stavebnice-hra.jpg" class="d-block w-100" alt="Stavebnice hra">
+        </div>
+        <div class="carousel-item">
+            <img src="/images/karusel/dite-balonky.jpg" class="d-block w-100" alt="Dítě s balonky">
+        </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselUsmevnaSkola" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselUsmevnaSkola" data-bs-slide="next">
+        <span class="carousel-control-next-icon"></span>
+    </button>
+</div>
+
+<!-- Nadpis pro stránky bez karuselu -->
+<!-- <h1 class="text-center my-4">Úsměvná škola</h1> -->
+<h1 class="text-center my-4">Hádanky v &#128522; Úsměvná škola</h1>
+
+
+<!-- Sekce informace -->
+<section class="container my-4">
+    <div class="alert alert-info">
+        <h4>Co znamenají ikonky u hádanek?</h4>
+        <p class="mb-1">
+            <span style="font-size: 1.4em;">&#128266;</span> <!-- emoji audio ������ --> <strong>Audio:</strong> přehraje hádanku nahlas, aby ji děti mohly hádat i poslechem.
+        </p>
+        <p class="mb-1">
+            <span style="font-size: 1.4em;">&#128161;</span> <!-- emoji lightbulb ������ --> <strong>Nápověda:</strong> zobrazí krátkou nápovědu, která dětem pomůže přijít na odpověď.
+        </p>
+        <p class="mb-0">
+            <span style="font-size: 1.4em;">&#9989;</span> <!-- emoji checkbox ✅ --> <strong>Řešení:</strong> prozradí správnou odpověď na hádanku.
+        </p>
+    </div>
+</section>
+
+
+
+
+<!-- Sekce pro hádanky z českých bájí -->
+<div class="container my-5">
+  <h2 class="text-center mb-4">Hádanky z českých pověstí</h2>
+  <div class="row g-3">
+
+    <!-- 1 -->
+    <div class="col-12 col-md-6 col-lg-3">
+      <div class="p-3 rounded h-100 d-flex flex-column" style="background-color: #FFEB3B;">
+        <h4>Hádanka 1</h4>
+        <p>Jsem město z vize ženy, z hradu vidím vltavské stěny. Kdo jsem?</p>
+        <div class="d-flex justify-content-end gap-2 mt-auto">
+          <!-- Ikona audio -->
+          <div class="activity-icon-box" onclick="toggleActivity(this.querySelector('.activity-box-box'))">
+              &#128266; 
+              <div class="activity-box-box">
+                  <strong>Audio:</strong><br>Lukáš<br>
+                      <audio controls style="width: 100%;">
+                      <source src="/audio/hadanky/hadanka-baje-1-lukas.mp3" type="audio/mpeg">
+                      Váš prohlížeč nepodporuje přehrávání audia.
+                  </audio>
+              </div>
+          </div>
+          <!-- Nápověda -->
+          <div class="activity-icon-box" onclick="toggleActivity(this.querySelector('.activity-box-box'))">
+            &#128161;
+            <div class="activity-box-box"><strong>Nápověda:</strong><br> Jméno mi dalo věštící slovo.</div>
+          </div>
+          <!-- Řešení -->
+          <div class="activity-icon-box" onclick="toggleActivity(this.querySelector('.activity-box-box'))">
+            &#9989;
+            <div class="activity-box-box"><strong>Řešení:</strong><br> Praha</div>
+          </div>
+    <!-- ikonka aktivity -->
+    <div class="activity-icon-box" onclick="toggleActivity(this.querySelector('.activity-box-box'))">
+      &#129513;
+      <div class="activity-box-box"><strong>Aktivita:</strong><br> Postav z kostek svůj vlastní hrad.</div>
+    </div>
+        </div>
+      </div>
+    </div>
+
+<!-- Hádanka 2 – Blanický rytíř -->
+<div class="col-12 col-md-6 col-lg-3">
+  <div class="p-3 rounded h-100 d-flex flex-column" style="background-color: #81C784;">
+    <h4>Hádanka 2</h4>
+    <p>Spinká v hoře, kůň vedle něj,<br>až bude zle, vrátí se, hej!</p>
+    <div class="d-flex justify-content-end gap-2 mt-auto">
+          <!-- Ikona audio -->
+          <div class="activity-icon-box" onclick="toggleActivity(this.querySelector('.activity-box-box'))">
+              &#128266; 
+              <div class="activity-box-box">
+                  <strong>Audio:</strong><br>Lukáš<br>
+                      <audio controls style="width: 100%;">
+                      <source src="/audio/hadanky/hadanka-baje-2-lukas.mp3" type="audio/mpeg">
+                      Váš prohlížeč nepodporuje přehrávání audia.
+                  </audio>
+              </div>
+          </div>
+    <!-- ikonka nápovědy -->
+    <div class="activity-icon-box" onclick="toggleActivity(this.querySelector('.activity-box-box'))">
+      &#128161;
+      <div class="activity-box-box"><strong>Nápověda:</strong><br> Spí v Blaníku s dalšími rytíři.</div>
+    </div>
+    <!-- ikonka řešení -->
+    <div class="activity-icon-box" onclick="toggleActivity(this.querySelector('.activity-box-box'))">
+      &#9989;
+      <div class="activity-box-box"><strong>Řešení:</strong><br> Blanický rytíř</div>
+    </div>
+    <!-- ikonka aktivity -->
+    <div class="activity-icon-box" onclick="toggleActivity(this.querySelector('.activity-box-box'))">
+      &#129513;
+      <div class="activity-box-box"><strong>Aktivita:</strong><br> Lehněte si, jako byste spali v jeskyni. A pak vyskočte jako rytíř do boje!</div>
+    </div>
+    </div>
+  </div>
+</div>
+
+<!-- Hádanka 3 – Vyšehrad -->
+<div class="col-12 col-md-6 col-lg-3">
+  <div class="p-3 rounded h-100 d-flex flex-column" style="background-color: #64B5F6;">
+    <h4>Hádanka 3</h4>
+    <p>Na skále se hrdě tyčí,<br>věže z dálky každý vidí.<br>Co to je?</p>
+    <div class="d-flex justify-content-end gap-2 mt-auto">
+          <!-- Ikona audio -->
+          <div class="activity-icon-box" onclick="toggleActivity(this.querySelector('.activity-box-box'))">
+              &#128266; 
+              <div class="activity-box-box">
+                  <strong>Audio:</strong><br>Lukáš<br>
+                      <audio controls style="width: 100%;">
+                      <source src="/audio/hadanky/hadanka-baje-3-lukas.mp3" type="audio/mpeg">
+                      Váš prohlížeč nepodporuje přehrávání audia.
+                  </audio>
+              </div>
+          </div>
+    <!-- ikonka nápovědy -->
+    <div class="activity-icon-box" onclick="toggleActivity(this.querySelector('.activity-box-box'))">
+      &#128161;
+      <div class="activity-box-box"><strong>Nápověda:</strong><br> Stojí nad Vltavou, byl tam Šemík.</div>
+    </div>
+    <!-- ikonka řešení -->
+    <div class="activity-icon-box" onclick="toggleActivity(this.querySelector('.activity-box-box'))">
+      &#9989;
+      <div class="activity-box-box"><strong>Řešení:</strong><br> Vyšehrad</div>
+    </div>
+    <!-- ikonka aktivity -->
+    <div class="activity-icon-box" onclick="toggleActivity(this.querySelector('.activity-box-box'))">
+      &#129513;
+      <div class="activity-box-box"><strong>Aktivita:</strong><br> Nakresli hrad na skále – a přidej řeku pod ním!</div>
+    </div>
+    </div>
+  </div>
+</div>
+
+<!-- Hádanka 4 – Libuše -->
+<div class="col-12 col-md-6 col-lg-3">
+  <div class="p-3 rounded h-100 d-flex flex-column" style="background-color: #FF7043;">
+    <h4>Hádanka 4</h4>
+    <p>Když zavřu oči, město vidím,<br>věštím slávu, slova řídím.</p>
+    <div class="d-flex justify-content-end gap-2 mt-auto">
+          <!-- Ikona audio -->
+          <div class="activity-icon-box" onclick="toggleActivity(this.querySelector('.activity-box-box'))">
+              &#128266; 
+              <div class="activity-box-box">
+                  <strong>Audio:</strong><br>Lukáš<br>
+                      <audio controls style="width: 100%;">
+                      <source src="/audio/hadanky/hadanka-baje-4-lukas.mp3" type="audio/mpeg">
+                      Váš prohlížeč nepodporuje přehrávání audia.
+                  </audio>
+              </div>
+          </div>
+    <!-- ikonka nápovědy -->
+    <div class="activity-icon-box" onclick="toggleActivity(this.querySelector('.activity-box-box'))">
+      &#128161;
+      <div class="activity-box-box"><strong>Nápověda:</strong><br> Říká se, že předpověděla Prahu.</div>
+    </div>
+    <!-- ikonka řešení -->
+    <div class="activity-icon-box" onclick="toggleActivity(this.querySelector('.activity-box-box'))">
+      &#9989;
+      <div class="activity-box-box"><strong>Řešení:</strong><br> Libuše</div>
+    </div>
+    <!-- ikonka aktivity -->
+    <div class="activity-icon-box" onclick="toggleActivity(this.querySelector('.activity-box-box'))">
+      &#129513;
+      <div class="activity-box-box"><strong>Aktivita:</strong><br> Zahraj si na věštce – zavři oči a vymysli, co uvidíš v budoucnu.</div>
+    </div>
+    </div>
+  </div>
+</div>
+
+    <!-- 5–12...  -->
+<!-- Hádanka 5 – O Bivojovi -->
+<div class="col-12 col-md-6 col-lg-3">
+  <div class="p-3 rounded h-100 d-flex flex-column" style="background-color: #D1C4E9;">
+    <h4>Hádanka 5</h4>
+    <p>Silák velký jako hora,<br>divočáka nosil z dvora.</p>
+    <!-- ikonka nápovědy -->
+    <div class="d-flex justify-content-end gap-2 mt-auto">
+      <div class="activity-icon-box" onclick="toggleActivity(this.querySelector('.activity-box-box'))">
+        &#128161;
+        <div class="activity-box-box"><strong>Nápověda:</strong><br> Silák z českých pověstí.</div>
+      </div>
+      <!-- ikonka řešení -->
+      <div class="activity-icon-box" onclick="toggleActivity(this.querySelector('.activity-box-box'))">
+        &#9989;
+        <div class="activity-box-box"><strong>Řešení:</strong><br> Bivoj</div>
+      </div>
+      <!-- ikonka aktivity -->
+      <div class="activity-icon-box" onclick="toggleActivity(this.querySelector('.activity-box-box'))">
+        &#129513;
+        <div class="activity-box-box"><strong>Aktivita:</strong><br> Zkuste zvednout plyšáka jako Bivoj divočáka.</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Hádanka 6 – O Horymírovi -->
+<div class="col-12 col-md-6 col-lg-3">
+  <div class="p-3 rounded h-100 d-flex flex-column" style="background-color: #AED581;">
+    <h4>Hádanka 6</h4>
+    <p>Na koníčku skok přes skálu,<br>zachránil se bez poplachu.</p>
+    <div class="d-flex justify-content-end gap-2 mt-auto">
+      <div class="activity-icon-box" onclick="toggleActivity(this.querySelector('.activity-box-box'))">
+        &#128161;
+        <div class="activity-box-box"><strong>Nápověda:</strong><br> Skok z hradu Vyšehrad.</div>
+      </div>
+      <div class="activity-icon-box" onclick="toggleActivity(this.querySelector('.activity-box-box'))">
+        &#9989;
+        <div class="activity-box-box"><strong>Řešení:</strong><br> Horymír</div>
+      </div>
+      <div class="activity-icon-box" onclick="toggleActivity(this.querySelector('.activity-box-box'))">
+        &#129513;
+        <div class="activity-box-box"><strong>Aktivita:</strong><br> Naskoč na koníka z polštáře a „přeskoč skálu“.</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Hádanka 7 – O Libuši -->
+<div class="col-12 col-md-6 col-lg-3">
+  <div class="p-3 rounded h-100 d-flex flex-column" style="background-color: #4FC3F7;">
+    <h4>Hádanka 7</h4>
+    <p>Viděla město veliké,<br>mělo jméno po muži měkké.</p>
+    <div class="d-flex justify-content-end gap-2 mt-auto">
+      <div class="activity-icon-box" onclick="toggleActivity(this.querySelector('.activity-box-box'))">
+        &#128161;
+        <div class="activity-box-box"><strong>Nápověda:</strong><br> Knížecí věštkyně.</div>
+      </div>
+      <div class="activity-icon-box" onclick="toggleActivity(this.querySelector('.activity-box-box'))">
+        &#9989;
+        <div class="activity-box-box"><strong>Řešení:</strong><br> Libuše</div>
+      </div>
+      <div class="activity-icon-box" onclick="toggleActivity(this.querySelector('.activity-box-box'))">
+        &#129513;
+        <div class="activity-box-box"><strong>Aktivita:</strong><br> Nakresli, jak bys chtěl, aby vypadalo „město budoucnosti“.</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Hádanka 8 – O Krokovi a jeho dcerách -->
+<div class="col-12 col-md-6 col-lg-3">
+  <div class="p-3 rounded h-100 d-flex flex-column" style="background-color: #FFB74D;">
+    <h4>Hádanka 8</h4>
+    <p>Tři sestry moudré jako kniha,<br>Radhostem kráčela jejich snaha.</p>
+    <div class="d-flex justify-content-end gap-2 mt-auto">
+      <div class="activity-icon-box" onclick="toggleActivity(this.querySelector('.activity-box-box'))">
+        &#128161;
+        <div class="activity-box-box"><strong>Nápověda:</strong><br> Dcery Krokovy.</div>
+      </div>
+      <div class="activity-icon-box" onclick="toggleActivity(this.querySelector('.activity-box-box'))">
+        &#9989;
+        <div class="activity-box-box"><strong>Řešení:</strong><br> Kazi, Teta a Libuše</div>
+      </div>
+      <div class="activity-icon-box" onclick="toggleActivity(this.querySelector('.activity-box-box'))">
+        &#129513;
+        <div class="activity-box-box"><strong>Aktivita:</strong><br> Zahraj si se sourozenci na tři sestry a vymyslete si „čarovné dovednosti“.</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Hádanka 9 – O Durynkovi -->
+<div class="col-12 col-md-6 col-lg-3">
+  <div class="p-3 rounded h-100 d-flex flex-column" style="background-color: #FFF176;">
+    <h4>Hádanka 9</h4>
+    <p>Udatný rytíř, štít a meč,<br>proti zlu vždy chránil peč.</p>
+    <div class="d-flex justify-content-end gap-2 mt-auto">
+      <div class="activity-icon-box" onclick="toggleActivity(this.querySelector('.activity-box-box'))">
+        &#128161;
+        <div class="activity-box-box"><strong>Nápověda:</strong><br> Z rytířských legend kolem Tetína.</div>
+      </div>
+      <div class="activity-icon-box" onclick="toggleActivity(this.querySelector('.activity-box-box'))">
+        &#9989;
+        <div class="activity-box-box"><strong>Řešení:</strong><br> Durynk</div>
+      </div>
+      <div class="activity-icon-box" onclick="toggleActivity(this.querySelector('.activity-box-box'))">
+        &#129513;
+        <div class="activity-box-box"><strong>Aktivita:</strong><br> Postav si papírový štít a hraj si na rytíře spravedlnosti.</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Hádanka 10 – O Přemyslovi Oráčovi -->
+<div class="col-12 col-md-6 col-lg-3">
+  <div class="p-3 rounded h-100 d-flex flex-column" style="background-color: #A5D6A7;">
+    <h4>Hádanka 10</h4>
+    <p>S pluhem orá pole dnem,<br>až k Libuši přišel snem.</p>
+    <div class="d-flex justify-content-end gap-2 mt-auto">
+      <div class="activity-icon-box" onclick="toggleActivity(this.querySelector('.activity-box-box'))">
+        &#128161;
+        <div class="activity-box-box"><strong>Nápověda:</strong><br> Zakladatel dynastie.</div>
+      </div>
+      <div class="activity-icon-box" onclick="toggleActivity(this.querySelector('.activity-box-box'))">
+        &#9989;
+        <div class="activity-box-box"><strong>Řešení:</strong><br> Přemysl Oráč</div>
+      </div>
+      <div class="activity-icon-box" onclick="toggleActivity(this.querySelector('.activity-box-box'))">
+        &#129513;
+        <div class="activity-box-box"><strong>Aktivita:</strong><br> Vymysli jméno a znak vlastní „rodové linie“.</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Hádanka 11 – O Šemíkovi -->
+<div class="col-12 col-md-6 col-lg-3">
+  <div class="p-3 rounded h-100 d-flex flex-column" style="background-color: #90CAF9;">
+    <h4>Hádanka 11</h4>
+    <p>Byl to koník věrný, silný,<br>skok přes skálu měl být poslední.</p>
+    <!-- ikonka nápovědy -->
+    <div class="d-flex justify-content-end gap-2 mt-auto">
+      <div class="activity-icon-box" onclick="toggleActivity(this.querySelector('.activity-box-box'))">
+        &#128161;
+        <div class="activity-box-box"><strong>Nápověda:</strong><br> Skákal s Horymírem z hradeb.</div>
+      </div>
+      <!-- ikonka řešení -->
+      <div class="activity-icon-box" onclick="toggleActivity(this.querySelector('.activity-box-box'))">
+        &#9989;
+        <div class="activity-box-box"><strong>Řešení:</strong><br> Šemík</div>
+      </div>
+      <!-- ikonka aktivity -->
+      <div class="activity-icon-box" onclick="toggleActivity(this.querySelector('.activity-box-box'))">
+        &#129513;
+        <div class="activity-box-box"><strong>Aktivita:</strong><br> Zahraj si se sourozencem „skok odvahy“ z polštářové věže.</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Hádanka 12 – O Blanických rytířích -->
+<div class="col-12 col-md-6 col-lg-3">
+  <div class="p-3 rounded h-100 d-flex flex-column" style="background-color: #FF8A65;">
+    <h4>Hádanka 12</h4>
+    <p>Spí v hoře, kde zvoník zvoní,<br>přijdou, až zemi hrozba honí.</p>
+    <!-- ikonka nápovědy -->
+    <div class="d-flex justify-content-end gap-2 mt-auto">
+      <div class="activity-icon-box" onclick="toggleActivity(this.querySelector('.activity-box-box'))">
+        &#128161;
+        <div class="activity-box-box"><strong>Nápověda:</strong><br> Rytíři, co se probudí v nejtěžší chvíli.</div>
+      </div>
+      <!-- ikonka řešení -->
+      <div class="activity-icon-box" onclick="toggleActivity(this.querySelector('.activity-box-box'))">
+        &#9989;
+        <div class="activity-box-box"><strong>Řešení:</strong><br> Blaničtí rytíři</div>
+      </div>
+      <!-- ikonka aktivity -->
+      <div class="activity-icon-box" onclick="toggleActivity(this.querySelector('.activity-box-box'))">
+        &#129513;
+        <div class="activity-box-box"><strong>Aktivita:</strong><br> Zavři oči a představ si, jak vypadají. Nakresli je!</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+  </div>
+</div>
+
+
+
+
+<div class="container my-5">
+    <nav class="mt-5 text-center">
+        <ul class="pagination justify-content-center">
+            <li class="page-item"><a class="page-link" href="/hadanky/">&#127984; 1. Z bájí</a></li>
+<li class="page-item"><a class="page-link" href="/hadanky/hadanky.html?stranka=2">2</a></li>
+<li class="page-item"><a class="page-link" href="/hadanky/hadanky.html?stranka=3">3</a></li>
+<li class="page-item"><a class="page-link" href="/hadanky/hadanky.html?stranka=4">4</a></li>
+<li class="page-item"><a class="page-link" href="/hadanky/hadanky.html?stranka=5">5</a></li>
+<li class="page-item"><a class="page-link" href="/hadanky/hadanky.html?stranka=6">6</a></li>
+<li class="page-item"><a class="page-link" href="/hadanky/hadanky.html?stranka=7">7</a></li>
+<li class="page-item"><a class="page-link" href="/hadanky/hadanky.html?stranka=8">8</a></li>
+<li class="page-item"><a class="page-link" href="/hadanky/hadanky.html?stranka=9">9</a></li>
+<li class="page-item"><a class="page-link" href="/hadanky/hadanky.html?stranka=10">10</a></li>
+<li class="page-item">
+  <a class="page-link" href="/hadanky/klasicke-hadanky.html" title="Původní hádanky">&#127913; Klasické</a>
+</li>
+        </ul>
+    </nav>
+</div>
+
+<!-- Sekce PROČ -->
+<section class="container py-5">
+    <h2 class="text-center mb-4">Proč řešit české hádanky?</h2>
+    <div class="row">
+        <div class="col-md-4 mb-3 d-flex">
+            <div class="p-4 text-center bg-light rounded shadow h-100 w-100">
+                <span class="material-icons" style="font-size: 48px; color: #FF9800;">psychology</span>
+                <h4>Rozvoj logiky</h4>
+                <p>Hádanky pomáhají dětem rozvíjet logické myšlení, zlepšují jejich schopnost hledat řešení a posilují bystrost.</p>
+            </div>
+        </div>
+        <div class="col-md-4 mb-3 d-flex">
+            <div class="p-4 text-center bg-light rounded shadow h-100 w-100">
+                <span class="material-icons" style="font-size: 48px; color: #64B5F6;">emoji_objects</span>
+                <h4>Kreativní učení</h4>
+                <p>Díky hádankám se děti učí novým věcem hravou formou, která je motivuje k objevování a zkoumání světa kolem nich.</p>
+            </div>
+        </div>
+        <div class="col-md-4 mb-3 d-flex">
+            <div class="p-4 text-center bg-light rounded shadow h-100 w-100">
+                <span class="material-icons" style="font-size: 48px; color: #81C784;">groups</span>
+                <h4>Společenská zábava</h4>
+                <p>Hádanky jsou skvělou aktivitou pro skupiny, kde podporují spolupráci, komunikaci a společnou zábavu.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+<!-- Patička -->
+<footer>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3">
+                <h5>O projektu</h5>
+                <p>Úsměvná škola přináší hravé učení pro děti i rodiče.</p>
+            </div>
+            <div class="col-md-3">
+                <h5>Odkazy</h5>
+                <ul class="list-unstyled">
+                    <li><a href="/baje-a-povesti/" class="text-white">Báje a pověsti</a></li>
+                    <li><a href="/rikanky/" class="text-white">Říkanky</a></li>
+                    <li><a href="/hadanky/" class="text-white">Hádanky</a></li>
+                </ul>
+            </div>
+            <div class="col-md-3">
+            <h5>Právní informace</h5>
+            <ul class="list-unstyled">
+                <li><a href="/licence.html" class="text-white">Licence</a></li>
+                <li><a href="/ochrana-osobnich-udaju.html" class="text-white">Ochrana osobních údajů</a></li>
+                <li><a href="/podminky-uziti.html" class="text-white">Podmínky užití</a></li>
+            </ul>
+            </div>
+            <div class="col-md-3">
+                <h5>Provozovatel</h5>
+                <ul class="list-unstyled">
+                    <li><a href="https://ekultura.eu/" class="text-white">eKultura, z.s.</a></li>
+                    <li><a href="https://or.justice.cz/ias/ui/rejstrik-firma.vysledky?subjektId=1242932&typ=PLATNY" class="text-white">IČO: 21682305</a></li>
+                    <li><a href="https://or.justice.cz/ias/ui/rejstrik-firma.vysledky?subjektId=1242932&typ=PLATNY" class="text-white">Spis.zn: L 79184</a></li>
+                </ul>
+            </div>
+        </div>
+        <p class="mt-3">&copy; 2024 Úsměvná škola. Všechna práva vyhrazena.</p>
+    </div>
+</footer>
+<script>
+function toggleActivity(box) {
+    box.style.display = box.style.display === 'block' ? 'none' : 'block';
+    // Skryj všechny ostatní boxy
+    document.querySelectorAll('.activity-box-box').forEach(el => {
+        if (el !== box) el.style.display = 'none';
+    });
+}
+</script>
+</body>
+</html>

@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+
+    <!-- Přidat do oblíbených -->
+    <link rel="icon" type="image/png" href="/img/favicon-96x96.png" sizes="96x96">
+    <link rel="icon" type="image/svg+xml" href="/img/favicon.svg">
+    <link rel="shortcut icon" href="/img/favicon.ico">
+    
+    <!-- iOS -->
+    <link rel="apple-touch-icon" sizes="180x180" href="/img/apple-touch-icon.png">
+    <meta name="apple-mobile-web-app-title" content="Úsměvná škola">
+    
+    <!-- Manifest pro usmevnaskola.cz -->
+    <link rel="manifest" href="/img/site.webmanifest">
+    
+    <!-- Barevné schéma pro usmevnaskola.cz -->
+    <meta name="theme-color" content="#ffcc80">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Báje a pověsti &#128522; Úsměvná škola</title>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="České báje a pověsti pro děti">
+    <meta property="og:description" content="Nejznámější české báje a pověsti pro děti od 5 let. Praotec Čech, Krok a jeho dcery a další.">
+    <meta property="og:url" content="https://usmevnaskola.cz/baje-a-povesti/">
+    <meta property="og:image" content="https://usmevnaskola.cz/images/karusel/divka-barevne-ruce.jpg">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:site_name" content="Úsměvná škola">
+    
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="České/dětské báje a pověsti pro děti">
+    <meta name="twitter:description" content="Zapojte se do našeho programu plného smíchu, objevování a učení. Ideální pro děti i rodiče!">
+    <meta name="twitter:image" content="https://usmevnaskola.cz/images/karusel/divka-barevne-ruce.jpg">
+    <meta name="twitter:site" content="@ekultura">
+    <meta name="twitter:creator" content="@ekultura">
+
+    <!-- Google / Schema.org -->
+    <meta itemprop="name" content="Úsměvná škola - Hravé učení pro děti i rodiče">
+    <meta itemprop="description" content="Zapojte se do našeho programu plného smíchu, objevování a učení. Ideální pro děti i rodiče!">
+    <meta itemprop="image" content="https://usmevnaskola.cz/images/karusel/divka-barevne-ruce.jpg">
+    
+    <!-- Fallback -->
+    <meta name="description" content="Zapojte se do našeho programu plného smíchu, objevování a učení. Ideální pro děti i rodiče!">
+
+    <!-- Cannonical -->
+    <link rel="canonical" href="https://usmevnaskola.cz/baje-a-povesti/" >
+
+    <style>
+        /* Stylování hlavního menu */
+        .navbar {
+            background-color: #ffcc80;
+        }
+        .navbar-brand, .nav-link {
+            color: #6d4c41 !important;
+        }
+        .nav-link:hover {
+            color: #3e2723 !important;
+        }
+        .emoji-logo {
+            font-size: 20px;
+            margin-left: 10px;
+            color: white; 
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5); 
+        }
+        /* Karusel */
+        .carousel-item img {
+            height: 400px;
+            object-fit: cover;
+        }
+        /* Patička */
+        footer {
+            background-color: #6d4c41;
+            color: white;
+            padding: 30px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+<!-- Navigační menu -->
+<nav class="navbar navbar-expand-lg navbar-light">
+    <div class="container">
+        <a class="navbar-brand" href="/"> <span class="emoji-logo">&#128522;</span>  Úsměvná škola</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item"><a class="nav-link" href="/baje-a-povesti/">Báje a pověsti</a></li>
+                <li class="nav-item"><a class="nav-link" href="/rikanky/">Říkanky</a></li>
+                <li class="nav-item"><a class="nav-link" href="/hadanky/">Hádanky</a></li>
+                <li class="nav-item"><a class="nav-link" href="/o-nas.html">O nás</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+
+<!-- Karusel s obrázky (volitelně možné zakomentovat) -->
+<div id="carouselUsmevnaSkola" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+        <div class="carousel-item active">
+            <img src="/images/karusel/divka-barevne-ruce.jpg" class="d-block w-100" alt="Dívka s barevnými prsty se směje">
+        </div>
+        <div class="carousel-item">
+            <img src="/images/karusel/stavebnice-hra.jpg" class="d-block w-100" alt="Stavebnice hra">
+        </div>
+        <div class="carousel-item">
+            <img src="/images/karusel/dite-balonky.jpg" class="d-block w-100" alt="Dítě s balonky">
+        </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselUsmevnaSkola" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselUsmevnaSkola" data-bs-slide="next">
+        <span class="carousel-control-next-icon"></span>
+    </button>
+</div>
+
+
+<!-- Nadpis pro stránky bez karuselu -->
+<h1 class="text-center my-4">Báje a pověsti &#128522; Úsměvná škola</h1> 
+
+
+
+<!-- Sekce informace -->
+<section class="container my-4">
+    <div class="alert alert-warning text-center">
+        <h4>Úsměvná škola je projektem neziskové organizace eKultura</h4>
+        <p>Web je stále ve vývoji, ale jednotlivé části jsou již k dispozici.</p>
+    </div>
+</section>
+
+
+
+
+<!-- Sekce pro delší text -->
+<div class="container my-5">
+    <div class="bg-white p-4" style="border:1px solid #eee">
+        <h2 class="text-center">Báje a pověsti</h2>
+        <p>
+            Dávno, dávno tomu, kdy hory byly ještě mladé a řeky líně protékaly krajinou, žila jedna moudrá sova...
+            <!-- celý text báje -->
+        </p>
+    </div>
+</div>
+
+
+
+
+<!-- MOZAIKA BÁJÍ A POVĚSTÍ -->
+<div class="container py-5">
+  <!-- 1. řádek: Obrázek vlevo, text vpravo -->
+  <div class="row mb-4">
+    <div class="col-md-6 d-flex flex-row">
+      <img src="/images/baje/praotec-cech.jpg" alt="Praotec Čech" class="img-fluid rounded me-3" style="max-width: 40%;">
+      <div>
+        <h3>Praotec Čech</h3>
+        <p>Legenda o příchodu praotce Čecha do země zaslíbené.</p>
+        <a href="/baje-a-povesti/praotec-cech.html" class="btn btn-outline-primary">Číst více</a>
+      </div>
+    </div>
+    <div class="col-md-6 d-flex flex-row">
+      <img src="/images/baje/krok-a-dcery.jpg" alt="Krok a jeho dcery" class="img-fluid rounded me-3" style="max-width: 40%;">
+      <div>
+        <h3>Krok a jeho dcery</h3>
+        <p>Pověst o moudrých dcerách knížete Kroka a jejich osudech.</p>
+        <a href="/baje-a-povesti/krok-a-jeho-dcery.html" class="btn btn-outline-primary">Číst více</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- 2. řádek: Text vlevo, obrázek vpravo -->
+  <div class="row mb-4">
+    <div class="col-md-6 d-flex flex-row-reverse">
+      <img src="/images/baje/blanicti-rytiry.jpg" alt="Blaničtí rytíři" class="img-fluid rounded ms-3" style="max-width: 40%;">
+      <div>
+        <h3>Blaničtí rytíři</h3>
+        <p>Legenda o rytířích, kteří čekají na probuzení v hoře Blaník.</p>
+        <a href="/baje-a-povesti/blanicti-rytiri.html" class="btn btn-outline-primary">Číst více</a>
+      </div>
+    </div>
+    <div class="col-md-6 d-flex flex-row-reverse">
+      <img src="/images/baje/bivoj.jpg" alt="Bivoj a divoký kanec" class="img-fluid rounded ms-3" style="max-width: 40%;">
+      <div>
+        <h3>Bivoj a divoký kanec</h3>
+        <p>Pověst o silném Bivojovi a jeho odvážném činu.</p>
+        <a href="/baje-a-povesti/o-bivojovi-a-divokem-kanci.html" class="btn btn-outline-primary">Číst více</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- 1. řádek: Obrázek vlevo, text vpravo -->
+  <div class="row mb-4">
+    <div class="col-md-6 d-flex flex-row">
+      <img src="/img/noimg.png" alt="Dívčí válka" class="img-fluid rounded me-3" style="max-width: 40%;">
+      <div>
+        <h3>Dívčí válka</h3>
+        <p>O sporu mezi muži a ženami.</p>
+        <a href="/baje-a-povesti/divci-valka.html" class="btn btn-outline-primary">Číst více</a>
+      </div>
+    </div>
+    <div class="col-md-6 d-flex flex-row">
+      <img src="/images/baje/horymir-a-jeho-kun-semik.jpg" alt="Horymír a jeho kůň Šemík" class="img-fluid rounded me-3" style="max-width: 40%;">
+      <div>
+        <h3>Horymír a jeho kůň Šemík</h3>
+        <p>O odvaze a věrnosti.</p>
+        <a href="/baje-a-povesti/horymir-a-jeho-kun-semik.html" class="btn btn-outline-primary">Číst více</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- 2. řádek: Text vlevo, obrázek vpravo -->
+  <div class="row mb-4">
+    <div class="col-md-6 d-flex flex-row-reverse">
+      <img src="/images/baje/golem.jpg" alt="O Golemovi" class="img-fluid rounded ms-3" style="max-width: 40%;">
+      <div>
+        <h3>O Golemovi</h3>
+        <p>O magickém obrovi z hlíny, kterého stvořil pražský rabín Löw.</p>
+        <a href="/baje-a-povesti/o-golemovi.html" class="btn btn-outline-primary">Číst více</a>
+      </div>
+    </div>
+    <div class="col-md-6 d-flex flex-row-reverse">
+      <img src="/img/noimg.png" alt="O Přemyslu Oráčovi" class="img-fluid rounded ms-3" style="max-width: 40%;">
+      <div>
+        <h3>O Přemyslu Oráčovi</h3>
+        <p>Pověst o Oráčovi, o Přemyslu Oráčovi.</p>
+        <a href="/baje-a-povesti/o-premyslu-oracovi.html" class="btn btn-outline-primary">Číst více</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- 1. řádek: Obrázek vlevo, text vpravo -->
+  <div class="row mb-4">
+    <div class="col-md-6 d-flex flex-row">
+      <img src="/img/noimg.png" alt="O Libuši a založení Prahy" class="img-fluid rounded me-3" style="max-width: 40%;">
+      <div>
+        <h3>O Libuši a založení Prahy</h3>
+        <p>O založení Prahy a Libušině předpovědi.</p>
+        <a href="/baje-a-povesti/o-libusi-a-zalozeni-prahy.html" class="btn btn-outline-primary">Číst více</a>
+      </div>
+    </div>
+    <div class="col-md-6 d-flex flex-row">
+      <img src="/img/noimg.png" alt="O Vlastě a Dívčí válce" class="img-fluid rounded me-3" style="max-width: 40%;">
+      <div>
+        <h3>O Vlastě a Dívčí válce</h3>
+        <p>Dívčí válka a Vlasta - vůdčí skupiny.</p>
+        <a href="/baje-a-povesti/o-vlaste-a-divci-valce.html" class="btn btn-outline-primary">Číst více</a>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+ <!--
+
+++<li><a href="/ceske-baje-a-povesti/praotec-cech">Praotec Čech</a> – O příchodu Čechů do země zaslíbené.</li>
+++<li><a href="/ceske-baje-a-povesti/krok-a-jeho-dcery">Krok a jeho dcery</a> (Libuše, Kazi, Teta) – O moudrých ženách a vzniku města Prahy.</li>
+++<li><a href="/ceske-baje-a-povesti/divci-valka">Dívčí válka</a> – O sporu mezi muži a ženami.</li>
+++<li><a href="/ceske-baje-a-povesti/horymir-a-jeho-kun-semik">Horymír a jeho kůň Šemík</a> – O odvaze a věrnosti.</li>
+++<li><a href="/ceske-baje-a-povesti/bivoj">Bivoj a divoký kanec</a> – O statečném lovci.</li>
+++<li><a href="/ceske-baje-a-povesti/blanicti-rytiri">Blaničtí rytíři</a> – O ochráncích české země, kteří spí v hoře Blaník.</li>
+++<li><a href="/ceske-baje-a-povesti/o-golemovi">O Golemovi</a> – O magickém obrovi z hlíny, kterého stvořil pražský rabín Löw.</li>
+++<li><a href="/ceske-baje-a-povesti/o-premyslu-oracovi">O Přemyslu Oráčovi</a></li>
+++<li><a href="https://usmevnaskola.cz/ceske-baje-a-povesti/o-libusi-a-zalozeni-prahy">O Libuši a založení Prahy </a></li>
+++<li><a href="/ceske-baje-a-povesti/o-vlaste-a-divci-valce">O Vlastě a Dívčí válce</a></li>
+
+
+        <h2 id="povesti">Další české báje a pověsti</h2>
+          
+            <li><a href="/ceske-baje-a-povesti/o-kresomyslovi-a-horymirovi">O Křesomyslovi a Horymírovi</a> – O příchodu Čechů do země zaslíbené.</li>
+
+        <h2 id="povesti">Moravské báje a pověsti</h2>
+          
+            <li><a href="/ceske-baje-a-povesti/o-pohanskem-bohu-radegastovi">O pohanském bohu Radegastovi</a></li>
+
+        <h2 id="povesti">Slezské báje a pověsti</h2>
+          
+            <li><a href="/ceske-baje-a-povesti/o-zlatem-rounu-jeseniku">O zlatém rounu Jeseníků</a></li>
+-->
+
+<!--
+České báje a pověsti:
+(HOTOVO) - O Křesomyslovi a Horymírovi
+(HOTOVO) -  O Přemyslu Oráčovi
+(HOTOVO) - O Libuši a založení Prahy
+(HOTOVO) - O Vlastě a Dívčí válce
+O Oldřichovi a Boženě
+O kněžně Ludmile a svatém Václavovi
+O kouzelné studánce
+O knížeti Břetislavovi a jeho únosu Jitky
+O Zlatovlásce
+O čarodějnici z Ještědu
+O Bílé paní z Perštejna
+O Bruncvíkovi a jeho lvu
+O rytíři Daliborovi
+O pražském orloji
+O Karlově mostě
+O vodníkovi na Vltavě
+O pokladu v Bezdězu
+O čertovi a Kozinovi
+O zlaté hoře na Krivoklátsku
+O Perunovi a boji s Velesem
+
+Moravské báje a pověsti:
+(HOTOVO) - O pohanském bohu Radegastovi
+O prameni Vřídla v Karlových Varech
+O Mariánském sloupu v Olomouci
+O bílém koni v Kunětické hoře
+O Zbojnickém hradě
+O Moravské bráně a jejím pokladu
+O Štramberských uších
+O bílé paní z Pernštejna
+
+Slezské báje a pověsti:
+HOTOVO O zlatém rounu Jeseníků
+O Čertových kamenech
+O Loupežníku Ondrášovi
+O Králickém Sněžníku a jeho pokladu
+
+Obecné české legendy:
+O svatém Prokopovi a čertu
+O Janu Žižkovi a husitech
+O Klementovi a založení kláštera
+O čertově mlýně
+O Smrti a Moudrém Honzovi
+O Jitřence a Měsíci
+
+Mýtické bytosti a příběhy:
+O skřítcích z Krušných hor
+O zlatém kapradí
+O bludičkách z Beskyd
+O lesních vílách z Šumavy
+O Krakonošovi a jeho říši
+
+
+=== === ===
+České báje a pověsti
+O Oldřichovi a Boženě
+O kněžně Ludmile a svatém Václavovi
+O kouzelné studánce
+O knížeti Břetislavovi a jeho únosu Jitky
+O Zlatovlásce
+O čarodějnici z Ještědu
+O Bílé paní z Perštejna
+O Bruncvíkovi a jeho lvu
+O rytíři Daliborovi
+O pražském orloji
+O Karlově mostě
+O vodníkovi na Vltavě
+O pokladu v Bezdězu
+O čertovi a Kozinovi
+O zlaté hoře na Křivoklátsku
+O Perunovi a boji s Velesem
+O kamenných mužích v Českém ráji
+O hradu Houska a bráně do pekla
+O ztraceném zvonu na Lipně
+O čertově mlýně
+Moravské báje a pověsti
+O prameni Vřídla v Karlových Varech
+O Mariánském sloupu v Olomouci
+O bílém koni v Kunětické hoře
+O Zbojnickém hradě
+O Moravské bráně a jejím pokladu
+O Štramberských uších
+O bílé paní z Pernštejna
+O ztraceném zvonu z Hostýna
+O zázračné vodě z Luhačovic
+O čertově stopě na Pálavě
+Slezské báje a pověsti
+O Čertových kamenech
+O Loupežníku Ondrášovi
+O Králickém Sněžníku a jeho pokladu
+O Bílé paní z Hukvald
+O Kamenném mostě v Jeseníkách
+O zlatém pokladu v Karviné
+O duchovi z Hradce nad Moravicí
+O zázračné studánce na Lysé hoře
+O čarodějce z Krnova
+O černém psu z Beskyd
+Obecné české legendy
+O svatém Prokopovi a čertu
+O Janu Žižkovi a husitech
+O Klementovi a založení kláštera
+O čertově mlýně
+O Smrti a Moudrém Honzovi
+O Jitřence a Měsíci
+O svatém Václavovi a vinicích
+O svaté Anežce České
+O založení Pražského hradu
+O svatém Janu Nepomuckém
+Mýtické bytosti a příběhy
+O skřítcích z Krušných hor
+O zlatém kapradí
+O bludičkách z Beskyd
+O lesních vílách z Šumavy
+O Krakonošovi a jeho říši
+O čertově skále
+O duchu z Vyšehradu
+O permonících v Jáchymově
+O vodníkovi z Bečvy
+O světélkách v temném lese
+Regionální příběhy a pověsti
+O strašidlech z Troskovic
+O dívce z Jindřichova Hradce
+O pokladu na zámku Hluboká
+O hradě Kost a jeho tajemství
+O Železných horách a čarodějnicích
+O loupežnících z Kokořínska
+O tajemství hradu Rabí
+O čertově sjezdovce na Ještědu
+O skřítcích z Českého lesa
+O třech kouzelných stromech v Jeseníkách
+-->
+
+
+<!-- Sekce PROČ -->
+<section class="container py-5">
+    <h2 class="text-center mb-4">Aktivity k bájím a pověstem</h2>
+    <div class="row">
+        <div class="col-md-4 mb-3 d-flex">
+            <div class="p-4 text-center bg-light rounded shadow h-100 w-100">
+                <span style="font-size: 48px; color: #FF9800;">&#x1F393; <!-- ������ --></span>
+                <h4>Učení hrou</h4>
+                <p>Báje a pověsti spojují dobrodružství a poučení. Děti se skrze příběhy nejen baví, ale také učí důležitým hodnotám, jako je odvaha, spravedlnost a spolupráce.</p>
+            </div>
+        </div>
+        <div class="col-md-4 mb-3 d-flex">
+            <div class="p-4 text-center bg-light rounded shadow h-100 w-100">
+                <span style="font-size: 48px; color: #64B5F6;">&#x1F3DB; <!-- ������️ --></span>
+                <h4>Kulturní dědictví</h4>
+                <p>Báje předávají tradice a hodnoty, které jsou základem naší kultury. Umožňují dětem lépe porozumět našim kořenům a historii.</p>
+            </div>
+        </div>
+        <div class="col-md-4 mb-3 d-flex">
+            <div class="p-4 text-center bg-light rounded shadow h-100 w-100">
+                <span style="font-size: 48px; color: #81C784;">&#x1F91D; <!-- ������ --></span>
+                <h4>Společné chvíle</h4>
+                <p>Čtení bájí je skvělou příležitostí pro rodiny trávit čas společně, diskutovat o příbězích a sdílet zážitky, které posilují vztahy.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+
+<!-- Patička -->
+<footer>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3">
+                <h5>O projektu</h5>
+                <p>Úsměvná škola přináší hravé učení pro děti i rodiče.</p>
+            </div>
+            <div class="col-md-3">
+                <h5>Odkazy</h5>
+                <ul class="list-unstyled">
+                    <li><a href="/baje-a-povesti.html" class="text-white">Báje a pověsti</a></li>
+                    <li><a href="/rikanky/" class="text-white">Říkanky</a></li>
+                    <li><a href="/hadanky/" class="text-white">Hádanky</a></li>
+                </ul>
+            </div>
+            <div class="col-md-3">
+            <h5>Právní informace</h5>
+            <ul class="list-unstyled">
+                <li><a href="/licence.html" class="text-white">Licence</a></li>
+                <li><a href="/ochrana-osobnich-udaju.html" class="text-white">Ochrana osobních údajů</a></li>
+                <li><a href="/podminky-uziti.html" class="text-white">Podmínky užití</a></li>
+            </ul>
+            </div>
+            <div class="col-md-3">
+                <h5>Provozovatel</h5>
+                <ul class="list-unstyled">
+                    <li><a href="https://ekultura.eu/" class="text-white">eKultura, z.s.</a></li>
+                    <li><a href="https://or.justice.cz/ias/ui/rejstrik-firma.vysledky?subjektId=1242932&typ=PLATNY" class="text-white">IČO: 21682305</a></li>
+                    <li><a href="https://or.justice.cz/ias/ui/rejstrik-firma.vysledky?subjektId=1242932&typ=PLATNY" class="text-white">Spis.zn: L 79184</a></li>
+                </ul>
+            </div>
+        </div>
+        <p class="mt-3">&copy; 2024 Úsměvná škola. Všechna práva vyhrazena.</p>
+    </div>
+</footer>
+
+</body>
+</html>
